@@ -1,0 +1,11 @@
+C:\Users\aluno\Documents\GitHub\VitalCare\VitalCare\VitalCare\bin\Debug\VitalCare.exe.config
+C:\Users\aluno\Documents\GitHub\VitalCare\VitalCare\VitalCare\bin\Debug\VitalCare.exe
+C:\Users\aluno\Documents\GitHub\VitalCare\VitalCare\VitalCare\bin\Debug\VitalCare.pdb
+C:\Users\aluno\Documents\GitHub\VitalCare\VitalCare\VitalCare\obj\Debug\VitalCare.csprojAssemblyReference.cache
+C:\Users\aluno\Documents\GitHub\VitalCare\VitalCare\VitalCare\obj\Debug\VitalCare.Properties.Resources.resources
+C:\Users\aluno\Documents\GitHub\VitalCare\VitalCare\VitalCare\obj\Debug\VitalCare.csproj.GenerateResource.cache
+C:\Users\aluno\Documents\GitHub\VitalCare\VitalCare\VitalCare\obj\Debug\VitalCare.csproj.CoreCompileInputs.cache
+C:\Users\aluno\Documents\GitHub\VitalCare\VitalCare\VitalCare\obj\Debug\VitalCare.exe
+C:\Users\aluno\Documents\GitHub\VitalCare\VitalCare\VitalCare\obj\Debug\VitalCare.pdb
+C:\Users\aluno\Documents\GitHub\VitalCare\VitalCare\VitalCare\obj\Debug\VitalCare.TLogin.resources
+C:\Users\aluno\Documents\GitHub\VitalCare\VitalCare\VitalCare\obj\Debug\VitalCare.TMenuCuidador.resources
