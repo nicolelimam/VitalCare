@@ -20,3 +20,17 @@ C:\Users\aluno\Downloads\VitalCare-main\VitalCare-main\VitalCare\VitalCare\obj\D
 C:\Users\aluno\Downloads\VitalCare-main\VitalCare-main\VitalCare\VitalCare\obj\Debug\VitalCare.csproj.CoreCompileInputs.cache
 C:\Users\aluno\Downloads\VitalCare-main\VitalCare-main\VitalCare\VitalCare\obj\Debug\VitalCare.exe
 C:\Users\aluno\Downloads\VitalCare-main\VitalCare-main\VitalCare\VitalCare\obj\Debug\VitalCare.pdb
+C:\Users\nicol\OneDrive\Documentos\Repositorios\VitalCare\VitalCare\VitalCare\obj\Debug\VitalCare.csproj.AssemblyReference.cache
+C:\Users\nicol\OneDrive\Documentos\Repositorios\VitalCare\VitalCare\VitalCare\obj\Debug\VitalCare.TLogin.resources
+C:\Users\nicol\OneDrive\Documentos\Repositorios\VitalCare\VitalCare\VitalCare\obj\Debug\VitalCare.Properties.Resources.resources
+C:\Users\nicol\OneDrive\Documentos\Repositorios\VitalCare\VitalCare\VitalCare\obj\Debug\VitalCare.TMenuCuidador.resources
+C:\Users\nicol\OneDrive\Documentos\Repositorios\VitalCare\VitalCare\VitalCare\obj\Debug\VitalCare.csproj.GenerateResource.cache
+C:\Users\nicol\OneDrive\Documentos\Repositorios\VitalCare\VitalCare\VitalCare\obj\Debug\VitalCare.csproj.CoreCompileInputs.cache
+C:\Users\nicol\OneDrive\Documentos\Repositorios\VitalCare\VitalCare\VitalCare\obj\Debug\VitalCare.exe
+C:\Users\nicol\OneDrive\Documentos\Repositorios\VitalCare\VitalCare\VitalCare\obj\Debug\VitalCare.pdb
+C:\Users\nicol\OneDrive\Documentos\Repositorios\VitalCare\VitalCare\VitalCare\bin\Debug\VitalCare.exe.config
+C:\Users\nicol\OneDrive\Documentos\Repositorios\VitalCare\VitalCare\VitalCare\bin\Debug\VitalCare.exe
+C:\Users\nicol\OneDrive\Documentos\Repositorios\VitalCare\VitalCare\VitalCare\bin\Debug\VitalCare.pdb
+C:\Users\nicol\OneDrive\Documentos\Repositorios\VitalCare\VitalCare\VitalCare\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\nicol\OneDrive\Documentos\Repositorios\VitalCare\VitalCare\VitalCare\obj\Debug\VitalCare.csproj.CopyComplete
+C:\Users\nicol\OneDrive\Documentos\Repositorios\VitalCare\VitalCare\VitalCare\obj\Debug\VitalCare.TProntuariosCuidador.resources

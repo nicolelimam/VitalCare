@@ -17,11 +17,25 @@ namespace VitalCare
             InitializeComponent();
         }
 
+
         private void TMenuCuidador_Load(object sender, EventArgs e)
         {
-
+            //impede que o usuário expanda a janela
+            this.MaximumSize = this.Size;
         }
 
+        //Abre uma janela dentro do painel principal (para abrir as telas sem ocultar o menu)
+        public void abrirForms(object Form)
+        {
+            if (this.panelprincipal.Controls.Count > 0)
+                this.panelprincipal.Controls.RemoveAt(0);
+                Form x = Form as Form;
+                x.TopLevel = false;
+                x.Dock = DockStyle.Fill;
+                this.panelprincipal.Controls.Add(x);
+                this.panelprincipal.Tag = x;
+                x.Show();
+        }
 
         //volta para a tela de login
         private void BotaoVoitar_Click(object sender, EventArgs e)
@@ -37,7 +51,7 @@ namespace VitalCare
 
         private void Button1_Click(object sender, EventArgs e)
         {
-
+            abrirForms(new TProntuariosCuidador());
         }
 
         private void FundoMenu_Paint(object sender, PaintEventArgs e)
@@ -48,6 +62,23 @@ namespace VitalCare
         private void Button5_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void iconPictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel4_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void botaoLogout_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            TLogin x = new TLogin();
+            x.Show();
         }
     }
 }

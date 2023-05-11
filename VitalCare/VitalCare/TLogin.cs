@@ -13,15 +13,13 @@ namespace VitalCare
 {
     public partial class TLogin : Form
     {
-        public TLogin()
+        public TLogin() => InitializeComponent();
+
+        private GraphicsPath GraphicsPath()
         {
-            InitializeComponent();
-            /*botaoEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            botaoEntrar.FlatAppearance.BorderSize = 0;
-            botaoEntrar.FlatAppearance.MouseDownBackColor = Color.Transparent;
-            botaoEntrar.FlatAppearance.MouseOverBackColor = Color.Transparent;
-            botaoEntrar.BackColor = Color.Transparent;*/
+            throw new NotImplementedException();
         }
+
         private void CampoEmail_TextChanged(object sender, EventArgs e)
         {
 
@@ -58,6 +56,17 @@ namespace VitalCare
         private void PictureBox2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TLogin_Load(object sender, EventArgs e)
+        {
+            //impede que o usuário expanda a janela
+            this.MaximumSize = this.Size;
         }
     }
 }
