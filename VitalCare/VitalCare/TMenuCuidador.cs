@@ -34,5 +34,20 @@ namespace VitalCare
         private void Logo_Click(object sender, EventArgs e)
         {
         }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FundoMenu_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Button5_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
