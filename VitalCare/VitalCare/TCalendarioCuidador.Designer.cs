@@ -1,7 +1,7 @@
 ﻿
 namespace VitalCare
 {
-    partial class TProntuariosCuidador
+    partial class TCalendarioCuidador
     {
         /// <summary>
         /// Required designer variable.
@@ -29,47 +29,38 @@ namespace VitalCare
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.botaoVoltar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // panel1
+            // label1
             // 
-            this.panel1.Location = new System.Drawing.Point(62, 30);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(813, 404);
-            this.panel1.TabIndex = 0;
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(283, 207);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(343, 30);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "AJUSTAR CALENDÁRIO AQUI";
             // 
-            // botaoVoltar
-            // 
-            this.botaoVoltar.Location = new System.Drawing.Point(813, 452);
-            this.botaoVoltar.Name = "botaoVoltar";
-            this.botaoVoltar.Size = new System.Drawing.Size(100, 26);
-            this.botaoVoltar.TabIndex = 1;
-            this.botaoVoltar.Text = "Voltar";
-            this.botaoVoltar.UseVisualStyleBackColor = true;
-            this.botaoVoltar.Click += new System.EventHandler(this.botaoVoltar_Click);
-            // 
-            // TProntuariosCuidador
+            // TCalendarioCuidador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::VitalCare.Properties.Resources.Tela_Principal___Cuidador;
             this.ClientSize = new System.Drawing.Size(940, 512);
-            this.Controls.Add(this.botaoVoltar);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "TProntuariosCuidador";
+            this.Name = "TCalendarioCuidador";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "TProntuariosCuidador";
-            this.Load += new System.EventHandler(this.TProntuariosCuidador_Load);
+            this.Text = "TCalendarioCuidador";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button botaoVoltar;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -1,7 +1,7 @@
 ﻿
 namespace VitalCare
 {
-    partial class TProntuariosCuidador
+    partial class TInicial
     {
         /// <summary>
         /// Required designer variable.
@@ -29,47 +29,36 @@ namespace VitalCare
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.botaoVoltar = new System.Windows.Forms.Button();
+            this.Btnlogout = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // panel1
+            // Btnlogout
             // 
-            this.panel1.Location = new System.Drawing.Point(62, 30);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(813, 404);
-            this.panel1.TabIndex = 0;
+            this.Btnlogout.Location = new System.Drawing.Point(771, 442);
+            this.Btnlogout.Name = "Btnlogout";
+            this.Btnlogout.Size = new System.Drawing.Size(125, 31);
+            this.Btnlogout.TabIndex = 0;
+            this.Btnlogout.Text = "Log out";
+            this.Btnlogout.UseVisualStyleBackColor = true;
+            this.Btnlogout.Click += new System.EventHandler(this.Btnlogout_Click);
             // 
-            // botaoVoltar
-            // 
-            this.botaoVoltar.Location = new System.Drawing.Point(813, 452);
-            this.botaoVoltar.Name = "botaoVoltar";
-            this.botaoVoltar.Size = new System.Drawing.Size(100, 26);
-            this.botaoVoltar.TabIndex = 1;
-            this.botaoVoltar.Text = "Voltar";
-            this.botaoVoltar.UseVisualStyleBackColor = true;
-            this.botaoVoltar.Click += new System.EventHandler(this.botaoVoltar_Click);
-            // 
-            // TProntuariosCuidador
+            // TInicial
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::VitalCare.Properties.Resources.Tela_Principal___Cuidador;
             this.ClientSize = new System.Drawing.Size(940, 512);
-            this.Controls.Add(this.botaoVoltar);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.Btnlogout);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "TProntuariosCuidador";
+            this.Name = "TInicial";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "TProntuariosCuidador";
-            this.Load += new System.EventHandler(this.TProntuariosCuidador_Load);
+            this.Text = "TInicial";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button botaoVoltar;
+        private System.Windows.Forms.Button Btnlogout;
     }
 }

@@ -15,6 +15,7 @@ namespace VitalCare
         public TMenuCuidador()
         {
             InitializeComponent();
+            abrirForms(new TInicial());
         }
 
 
@@ -32,6 +33,9 @@ namespace VitalCare
                 Form x = Form as Form;
                 x.TopLevel = false;
                 x.Dock = DockStyle.Fill;
+                x.Location = new Point(0, 0);
+                x.Size = panelprincipal.Size;
+                panelprincipal.Controls.Clear();
                 this.panelprincipal.Controls.Add(x);
                 this.panelprincipal.Tag = x;
                 x.Show();
@@ -52,6 +56,7 @@ namespace VitalCare
         private void Button1_Click(object sender, EventArgs e)
         {
             abrirForms(new TProntuariosCuidador());
+            
         }
 
         private void FundoMenu_Paint(object sender, PaintEventArgs e)
@@ -79,6 +84,11 @@ namespace VitalCare
             this.Hide();
             TLogin x = new TLogin();
             x.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            abrirForms(new TCalendarioCuidador());
         }
     }
 }

@@ -35,10 +35,8 @@
             this.button4 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panelprincipal = new System.Windows.Forms.Panel();
-            this.botaoLogout = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             this.panel4.SuspendLayout();
-            this.panelprincipal.SuspendLayout();
             this.SuspendLayout();
             // 
             // logo
@@ -80,6 +78,7 @@
             this.button2.TabIndex = 3;
             this.button2.Text = "CALENDÁRIO";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -128,23 +127,17 @@
             // 
             // panelprincipal
             // 
+            this.panelprincipal.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelprincipal.AutoScroll = true;
+            this.panelprincipal.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panelprincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.panelprincipal.BackgroundImage = global::VitalCare.Properties.Resources.Tela_Principal___Cuidador;
-            this.panelprincipal.Controls.Add(this.botaoLogout);
-            this.panelprincipal.Location = new System.Drawing.Point(0, 42);
+            this.panelprincipal.Location = new System.Drawing.Point(0, 45);
             this.panelprincipal.Name = "panelprincipal";
-            this.panelprincipal.Size = new System.Drawing.Size(948, 527);
+            this.panelprincipal.Size = new System.Drawing.Size(940, 512);
             this.panelprincipal.TabIndex = 3;
-            // 
-            // botaoLogout
-            // 
-            this.botaoLogout.Location = new System.Drawing.Point(811, 475);
-            this.botaoLogout.Name = "botaoLogout";
-            this.botaoLogout.Size = new System.Drawing.Size(117, 28);
-            this.botaoLogout.TabIndex = 0;
-            this.botaoLogout.Text = "Logout";
-            this.botaoLogout.UseVisualStyleBackColor = true;
-            this.botaoLogout.Click += new System.EventHandler(this.botaoLogout_Click);
             // 
             // TMenuCuidador
             // 
@@ -165,7 +158,6 @@
             this.Load += new System.EventHandler(this.TMenuCuidador_Load);
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             this.panel4.ResumeLayout(false);
-            this.panelprincipal.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -178,6 +170,5 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panelprincipal;
-        private System.Windows.Forms.Button botaoLogout;
     }
 }

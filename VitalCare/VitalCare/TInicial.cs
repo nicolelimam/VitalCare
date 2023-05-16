@@ -10,22 +10,18 @@ using System.Windows.Forms;
 
 namespace VitalCare
 {
-    public partial class TProntuariosCuidador : Form
+    public partial class TInicial : Form
     {
-        public TProntuariosCuidador()
+        public TInicial()
         {
             InitializeComponent();
         }
 
-        private void TProntuariosCuidador_Load(object sender, EventArgs e)
-        {
-            this.MaximumSize = this.Size;
-        }
-
-        private void botaoVoltar_Click(object sender, EventArgs e)
+        private void Btnlogout_Click(object sender, EventArgs e)
         {
             this.Hide();
-            
+            TLogin x = new TLogin();
+            x.Show();
         }
     }
 }

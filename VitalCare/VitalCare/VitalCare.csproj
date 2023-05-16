@@ -54,6 +54,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FontAwesome\Resources.cs" />
+    <Compile Include="TCalendarioCuidador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TCalendarioCuidador.Designer.cs">
+      <DependentUpon>TCalendarioCuidador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TInicial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TInicial.Designer.cs">
+      <DependentUpon>TInicial.cs</DependentUpon>
+    </Compile>
     <Compile Include="TLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -74,6 +86,12 @@
     <Compile Include="TProntuariosCuidador.Designer.cs">
       <DependentUpon>TProntuariosCuidador.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="TCalendarioCuidador.resx">
+      <DependentUpon>TCalendarioCuidador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TInicial.resx">
+      <DependentUpon>TInicial.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TLogin.resx">
       <DependentUpon>TLogin.cs</DependentUpon>
     </EmbeddedResource>
