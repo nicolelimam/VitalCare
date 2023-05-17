@@ -12,6 +12,8 @@ namespace VitalCare
 {
     public partial class TMenuCuidador : Form
     {
+
+
         public TMenuCuidador()
         {
             InitializeComponent();
@@ -23,6 +25,7 @@ namespace VitalCare
         {
             //impede que o usuário expanda a janela
             this.MaximumSize = this.Size;
+            TInicial x = new TInicial();
         }
 
         //Abre uma janela dentro do painel principal (para abrir as telas sem ocultar o menu)
@@ -47,6 +50,7 @@ namespace VitalCare
             this.Hide();
             TLogin l = new TLogin();
             l.Show();
+
         }
 
         private void Logo_Click(object sender, EventArgs e)
@@ -89,6 +93,13 @@ namespace VitalCare
         private void button2_Click(object sender, EventArgs e)
         {
             abrirForms(new TCalendarioCuidador());
+        }
+
+        private void botaoSair_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            TLogin x = new TLogin();
+            x.Show();
         }
     }
 }

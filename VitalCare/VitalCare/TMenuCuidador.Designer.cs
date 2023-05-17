@@ -35,6 +35,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panelprincipal = new System.Windows.Forms.Panel();
+            this.botaoSair = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
@@ -111,6 +112,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(180)))), ((int)(((byte)(158)))));
+            this.panel4.Controls.Add(this.botaoSair);
             this.panel4.Controls.Add(this.button4);
             this.panel4.Controls.Add(this.logo);
             this.panel4.Controls.Add(this.button3);
@@ -138,6 +140,21 @@
             this.panelprincipal.Name = "panelprincipal";
             this.panelprincipal.Size = new System.Drawing.Size(940, 512);
             this.panelprincipal.TabIndex = 3;
+            // 
+            // botaoSair
+            // 
+            this.botaoSair.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(180)))), ((int)(((byte)(158)))));
+            this.botaoSair.FlatAppearance.BorderSize = 0;
+            this.botaoSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.botaoSair.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botaoSair.ForeColor = System.Drawing.Color.White;
+            this.botaoSair.Location = new System.Drawing.Point(798, 1);
+            this.botaoSair.Name = "botaoSair";
+            this.botaoSair.Size = new System.Drawing.Size(136, 42);
+            this.botaoSair.TabIndex = 6;
+            this.botaoSair.Text = "SAIR";
+            this.botaoSair.UseVisualStyleBackColor = false;
+            this.botaoSair.Click += new System.EventHandler(this.botaoSair_Click);
             // 
             // TMenuCuidador
             // 
@@ -170,5 +187,6 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panelprincipal;
+        private System.Windows.Forms.Button botaoSair;
     }
 }

@@ -36,3 +36,5 @@ C:\Users\nicol\OneDrive\Documentos\Repositorios\VitalCare\VitalCare\VitalCare\ob
 C:\Users\nicol\OneDrive\Documentos\Repositorios\VitalCare\VitalCare\VitalCare\obj\Debug\VitalCare.TProntuariosCuidador.resources
 C:\Users\nicol\OneDrive\Documentos\Repositorios\VitalCare\VitalCare\VitalCare\obj\Debug\VitalCare.TInicial.resources
 C:\Users\nicol\OneDrive\Documentos\Repositorios\VitalCare\VitalCare\VitalCare\obj\Debug\VitalCare.TCalendarioCuidador.resources
+C:\Users\nicol\OneDrive\Documentos\Repositorios\VitalCare\VitalCare\VitalCare\obj\Debug\VitalCare.TCalendario.resources
+C:\Users\nicol\OneDrive\Documentos\Repositorios\VitalCare\VitalCare\VitalCare\obj\Debug\VitalCare.TMenuAdministrador.resources

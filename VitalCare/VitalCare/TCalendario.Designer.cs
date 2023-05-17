@@ -1,7 +1,7 @@
 ﻿
 namespace VitalCare
 {
-    partial class TInicial
+    partial class TCalendario
     {
         /// <summary>
         /// Required designer variable.
@@ -31,16 +31,14 @@ namespace VitalCare
         {
             this.SuspendLayout();
             // 
-            // TInicial
+            // TCalendario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::VitalCare.Properties.Resources.Tela_Principal___Cuidador;
             this.ClientSize = new System.Drawing.Size(940, 512);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "TInicial";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
-            this.Text = "TInicial";
+            this.Name = "TCalendario";
+            this.Text = "TCalendario";
             this.ResumeLayout(false);
 
         }

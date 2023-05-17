@@ -68,5 +68,12 @@ namespace VitalCare
             //impede que o usuário expanda a janela
             this.MaximumSize = this.Size;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            TMenuAdministrador x = new TMenuAdministrador();
+            x.Show();
+        }
     }
 }
