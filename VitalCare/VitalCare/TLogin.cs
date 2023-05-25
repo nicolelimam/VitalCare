@@ -8,12 +8,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace VitalCare
 {
     public partial class TLogin : Form
     {
-        public TLogin() => InitializeComponent();
+        private Conexao conexao;
+        public TLogin()
+        {
+            InitializeComponent();
+            conexao = new Conexao();
+        }
 
         private GraphicsPath GraphicsPath()
         {
@@ -48,9 +54,28 @@ namespace VitalCare
         //TESTE - direciona para a tela principal do cuidador
         private void BotaoEntrar_Click(object sender, EventArgs e)
         {
-            this.Hide();
-            TMenuCuidador x = new TMenuCuidador();
-            x.Show();
+            string email = campoEmail.Text;
+            string senha = campoSenha.Text;
+
+            MySqlConnection connection = conexao.IniciarConexao();
+
+            try
+            {
+                string query = "SELECT COUNT(*) FROM tabela_usuarios WHERE email = @Email AND senha = @Senha";
+                MySqlCommand command = new MySqlCommand(query, connection);
+                command.Parameters.AddWithValue("@Email", email);
+                command.Parameters.AddWithValue("@Senha", senha);
+
+                MessageBox.Show("Login com Sucesso !!");
+                this.Hide();
+                TMenuCuidador x = new TMenuCuidador();
+                x.Show();
+
+            }
+            catch
+            {
+                MessageBox.Show("Erro !!");
+            }
         }
 
         private void PictureBox2_Click(object sender, EventArgs e)

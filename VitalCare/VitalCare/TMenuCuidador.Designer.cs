@@ -34,8 +34,8 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.panelprincipal = new System.Windows.Forms.Panel();
             this.botaoSair = new System.Windows.Forms.Button();
+            this.panelprincipal = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
@@ -127,20 +127,6 @@
             this.panel4.TabIndex = 2;
             this.panel4.Paint += new System.Windows.Forms.PaintEventHandler(this.panel4_Paint);
             // 
-            // panelprincipal
-            // 
-            this.panelprincipal.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.panelprincipal.AutoScroll = true;
-            this.panelprincipal.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.panelprincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.panelprincipal.BackgroundImage = global::VitalCare.Properties.Resources.Tela_Principal___Cuidador;
-            this.panelprincipal.Location = new System.Drawing.Point(0, 45);
-            this.panelprincipal.Name = "panelprincipal";
-            this.panelprincipal.Size = new System.Drawing.Size(940, 512);
-            this.panelprincipal.TabIndex = 3;
-            // 
             // botaoSair
             // 
             this.botaoSair.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(180)))), ((int)(((byte)(158)))));
@@ -155,6 +141,20 @@
             this.botaoSair.Text = "SAIR";
             this.botaoSair.UseVisualStyleBackColor = false;
             this.botaoSair.Click += new System.EventHandler(this.botaoSair_Click);
+            // 
+            // panelprincipal
+            // 
+            this.panelprincipal.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelprincipal.AutoScroll = true;
+            this.panelprincipal.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.panelprincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.panelprincipal.BackgroundImage = global::VitalCare.Properties.Resources.Tela_Principal___Cuidador;
+            this.panelprincipal.Location = new System.Drawing.Point(0, 45);
+            this.panelprincipal.Name = "panelprincipal";
+            this.panelprincipal.Size = new System.Drawing.Size(940, 512);
+            this.panelprincipal.TabIndex = 3;
             // 
             // TMenuCuidador
             // 
