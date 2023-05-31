@@ -101,6 +101,18 @@
     <Compile Include="TCadastro.Designer.cs">
       <DependentUpon>TCadastro.cs</DependentUpon>
     </Compile>
+    <Compile Include="TCadastroPaciente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TCadastroPaciente.Designer.cs">
+      <DependentUpon>TCadastroPaciente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TCadastroProntuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TCadastroProntuario.Designer.cs">
+      <DependentUpon>TCadastroProntuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="TCalendario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +124,12 @@
     </Compile>
     <Compile Include="TCalendarioCuidador.Designer.cs">
       <DependentUpon>TCalendarioCuidador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TExibirPacientesADM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TExibirPacientesADM.Designer.cs">
+      <DependentUpon>TExibirPacientesADM.cs</DependentUpon>
     </Compile>
     <Compile Include="TInicial.cs">
       <SubType>Form</SubType>
@@ -148,11 +166,20 @@
     <EmbeddedResource Include="TCadastro.resx">
       <DependentUpon>TCadastro.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TCadastroPaciente.resx">
+      <DependentUpon>TCadastroPaciente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TCadastroProntuario.resx">
+      <DependentUpon>TCadastroProntuario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TCalendario.resx">
       <DependentUpon>TCalendario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TCalendarioCuidador.resx">
       <DependentUpon>TCalendarioCuidador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TExibirPacientesADM.resx">
+      <DependentUpon>TExibirPacientesADM.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TInicial.resx">
       <DependentUpon>TInicial.cs</DependentUpon>
