@@ -129,3 +129,6 @@ C:\Users\NANABE\Documents\GitHub\VitalCare\VitalCare\VitalCare\obj\Debug\VitalCa
 C:\Users\NANABE\Documents\GitHub\VitalCare\VitalCare\VitalCare\obj\Debug\VitalCare.csproj.CopyComplete
 C:\Users\NANABE\Documents\GitHub\VitalCare\VitalCare\VitalCare\obj\Debug\VitalCare.exe
 C:\Users\NANABE\Documents\GitHub\VitalCare\VitalCare\VitalCare\obj\Debug\VitalCare.pdb
+C:\Users\Cliente\Videos\VitalCare\VitalCare\VitalCare\obj\Debug\VitalCare.TCadastroPaciente.resources
+C:\Users\Cliente\Videos\VitalCare\VitalCare\VitalCare\obj\Debug\VitalCare.TCadastroProntuario.resources
+C:\Users\Cliente\Videos\VitalCare\VitalCare\VitalCare\obj\Debug\VitalCare.TExibirPacientesADM.resources

@@ -61,20 +61,28 @@ namespace VitalCare
 
             try
             {
-                string query = "SELECT COUNT(*) FROM tabela_usuarios WHERE email = @Email AND senha = @Senha";
+                string query = "SELECT COUNT(*) FROM dados_login WHERE email = @Email AND senha = @Senha";
                 MySqlCommand command = new MySqlCommand(query, connection);
                 command.Parameters.AddWithValue("@Email", email);
                 command.Parameters.AddWithValue("@Senha", senha);
 
-                MessageBox.Show("Login com Sucesso !!");
-                this.Hide();
-                TMenuCuidador x = new TMenuCuidador();
-                x.Show();
+                int count = Convert.ToInt32(command.ExecuteScalar());
 
+                if (count > 0)
+                {
+                    MessageBox.Show("Login realizado com Sucesso !!");
+                    this.Hide();
+                    TMenuCuidador x = new TMenuCuidador();
+                    x.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Email ou senha inválidos.");
+                }
             }
-            catch
+            catch (Exception ex)
             {
-                MessageBox.Show("Erro !!");
+                MessageBox.Show("Erro ao Realizaro Login: " + ex.Message);
             }
         }
 

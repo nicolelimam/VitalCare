@@ -31,11 +31,11 @@ namespace VitalCare
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.BtnSalvar = new System.Windows.Forms.Button();
-            this.ComboBoxMedicamento = new System.Windows.Forms.ComboBox();
-            this.ComboBoxComorbidades = new System.Windows.Forms.ComboBox();
-            this.TxtBoxObservacoes = new System.Windows.Forms.TextBox();
-            this.TxtBoxIdade = new System.Windows.Forms.TextBox();
-            this.ComboBoxNome = new System.Windows.Forms.ComboBox();
+            this.campoMedicamentos = new System.Windows.Forms.ComboBox();
+            this.campoComorbidades = new System.Windows.Forms.ComboBox();
+            this.campoObservacao = new System.Windows.Forms.TextBox();
+            this.campoIdade = new System.Windows.Forms.TextBox();
+            this.campoNome = new System.Windows.Forms.ComboBox();
             this.LblObservacoes = new System.Windows.Forms.Label();
             this.LblMedicamentos = new System.Windows.Forms.Label();
             this.LblComorbidades = new System.Windows.Forms.Label();
@@ -51,11 +51,11 @@ namespace VitalCare
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(251)))), ((int)(((byte)(240)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.BtnSalvar);
-            this.panel1.Controls.Add(this.ComboBoxMedicamento);
-            this.panel1.Controls.Add(this.ComboBoxComorbidades);
-            this.panel1.Controls.Add(this.TxtBoxObservacoes);
-            this.panel1.Controls.Add(this.TxtBoxIdade);
-            this.panel1.Controls.Add(this.ComboBoxNome);
+            this.panel1.Controls.Add(this.campoMedicamentos);
+            this.panel1.Controls.Add(this.campoComorbidades);
+            this.panel1.Controls.Add(this.campoObservacao);
+            this.panel1.Controls.Add(this.campoIdade);
+            this.panel1.Controls.Add(this.campoNome);
             this.panel1.Controls.Add(this.LblObservacoes);
             this.panel1.Controls.Add(this.LblMedicamentos);
             this.panel1.Controls.Add(this.LblComorbidades);
@@ -79,54 +79,55 @@ namespace VitalCare
             this.BtnSalvar.TabIndex = 16;
             this.BtnSalvar.Text = "Salvar";
             this.BtnSalvar.UseVisualStyleBackColor = false;
+            this.BtnSalvar.Click += new System.EventHandler(this.BtnSalvar_Click);
             // 
-            // ComboBoxMedicamento
+            // campoMedicamentos
             // 
-            this.ComboBoxMedicamento.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ComboBoxMedicamento.FormattingEnabled = true;
-            this.ComboBoxMedicamento.Location = new System.Drawing.Point(173, 148);
-            this.ComboBoxMedicamento.Name = "ComboBoxMedicamento";
-            this.ComboBoxMedicamento.Size = new System.Drawing.Size(323, 25);
-            this.ComboBoxMedicamento.TabIndex = 15;
+            this.campoMedicamentos.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.campoMedicamentos.FormattingEnabled = true;
+            this.campoMedicamentos.Location = new System.Drawing.Point(173, 148);
+            this.campoMedicamentos.Name = "campoMedicamentos";
+            this.campoMedicamentos.Size = new System.Drawing.Size(323, 25);
+            this.campoMedicamentos.TabIndex = 15;
             // 
-            // ComboBoxComorbidades
+            // campoComorbidades
             // 
-            this.ComboBoxComorbidades.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ComboBoxComorbidades.FormattingEnabled = true;
-            this.ComboBoxComorbidades.Items.AddRange(new object[] {
+            this.campoComorbidades.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.campoComorbidades.FormattingEnabled = true;
+            this.campoComorbidades.Items.AddRange(new object[] {
             "Diabete",
             "Hipertensão"});
-            this.ComboBoxComorbidades.Location = new System.Drawing.Point(173, 102);
-            this.ComboBoxComorbidades.Name = "ComboBoxComorbidades";
-            this.ComboBoxComorbidades.Size = new System.Drawing.Size(323, 25);
-            this.ComboBoxComorbidades.TabIndex = 14;
+            this.campoComorbidades.Location = new System.Drawing.Point(173, 102);
+            this.campoComorbidades.Name = "campoComorbidades";
+            this.campoComorbidades.Size = new System.Drawing.Size(323, 25);
+            this.campoComorbidades.TabIndex = 14;
             // 
-            // TxtBoxObservacoes
+            // campoObservacao
             // 
-            this.TxtBoxObservacoes.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBoxObservacoes.Location = new System.Drawing.Point(173, 200);
-            this.TxtBoxObservacoes.Multiline = true;
-            this.TxtBoxObservacoes.Name = "TxtBoxObservacoes";
-            this.TxtBoxObservacoes.Size = new System.Drawing.Size(323, 113);
-            this.TxtBoxObservacoes.TabIndex = 13;
+            this.campoObservacao.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.campoObservacao.Location = new System.Drawing.Point(173, 200);
+            this.campoObservacao.Multiline = true;
+            this.campoObservacao.Name = "campoObservacao";
+            this.campoObservacao.Size = new System.Drawing.Size(323, 113);
+            this.campoObservacao.TabIndex = 13;
             // 
-            // TxtBoxIdade
+            // campoIdade
             // 
-            this.TxtBoxIdade.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBoxIdade.Location = new System.Drawing.Point(399, 50);
-            this.TxtBoxIdade.Multiline = true;
-            this.TxtBoxIdade.Name = "TxtBoxIdade";
-            this.TxtBoxIdade.Size = new System.Drawing.Size(97, 21);
-            this.TxtBoxIdade.TabIndex = 6;
+            this.campoIdade.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.campoIdade.Location = new System.Drawing.Point(399, 50);
+            this.campoIdade.Multiline = true;
+            this.campoIdade.Name = "campoIdade";
+            this.campoIdade.Size = new System.Drawing.Size(97, 21);
+            this.campoIdade.TabIndex = 6;
             // 
-            // ComboBoxNome
+            // campoNome
             // 
-            this.ComboBoxNome.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ComboBoxNome.FormattingEnabled = true;
-            this.ComboBoxNome.Location = new System.Drawing.Point(99, 46);
-            this.ComboBoxNome.Name = "ComboBoxNome";
-            this.ComboBoxNome.Size = new System.Drawing.Size(201, 25);
-            this.ComboBoxNome.TabIndex = 5;
+            this.campoNome.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.campoNome.FormattingEnabled = true;
+            this.campoNome.Location = new System.Drawing.Point(99, 46);
+            this.campoNome.Name = "campoNome";
+            this.campoNome.Size = new System.Drawing.Size(201, 25);
+            this.campoNome.TabIndex = 5;
             // 
             // LblObservacoes
             // 
@@ -227,11 +228,11 @@ namespace VitalCare
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button BtnSalvar;
-        private System.Windows.Forms.ComboBox ComboBoxMedicamento;
-        private System.Windows.Forms.ComboBox ComboBoxComorbidades;
-        private System.Windows.Forms.TextBox TxtBoxObservacoes;
-        private System.Windows.Forms.TextBox TxtBoxIdade;
-        private System.Windows.Forms.ComboBox ComboBoxNome;
+        private System.Windows.Forms.ComboBox campoMedicamentos;
+        private System.Windows.Forms.ComboBox campoComorbidades;
+        private System.Windows.Forms.TextBox campoObservacao;
+        private System.Windows.Forms.TextBox campoIdade;
+        private System.Windows.Forms.ComboBox campoNome;
         private System.Windows.Forms.Label LblObservacoes;
         private System.Windows.Forms.Label LblMedicamentos;
         private System.Windows.Forms.Label LblComorbidades;
