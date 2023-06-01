@@ -31,94 +31,98 @@ namespace VitalCare
         {
             this.BtnVoltar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.TxtBoxPesquisar = new System.Windows.Forms.TextBox();
-            this.BtnSalvar = new System.Windows.Forms.Button();
-            this.LblPesquisar = new System.Windows.Forms.Label();
-            this.BtnBuscar = new System.Windows.Forms.Button();
             this.BtnCadastrar = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
+            this.BtnBuscar = new System.Windows.Forms.Button();
+            this.TxtBoxPesquisar = new System.Windows.Forms.TextBox();
+            this.LblPesquisar = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // BtnVoltar
             // 
-            this.BtnVoltar.Location = new System.Drawing.Point(699, 453);
+            this.BtnVoltar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(180)))), ((int)(((byte)(158)))));
+            this.BtnVoltar.FlatAppearance.BorderSize = 0;
+            this.BtnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnVoltar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnVoltar.ForeColor = System.Drawing.Color.White;
+            this.BtnVoltar.Location = new System.Drawing.Point(846, 473);
             this.BtnVoltar.Name = "BtnVoltar";
-            this.BtnVoltar.Size = new System.Drawing.Size(119, 27);
+            this.BtnVoltar.Size = new System.Drawing.Size(76, 27);
             this.BtnVoltar.TabIndex = 20;
             this.BtnVoltar.Text = "Voltar";
-            this.BtnVoltar.UseVisualStyleBackColor = true;
+            this.BtnVoltar.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.panel1.Controls.Add(this.BtnCadastrar);
-            this.panel1.Controls.Add(this.BtnBuscar);
-            this.panel1.Controls.Add(this.TxtBoxPesquisar);
-            this.panel1.Controls.Add(this.BtnSalvar);
-            this.panel1.Controls.Add(this.LblPesquisar);
-            this.panel1.Location = new System.Drawing.Point(89, 43);
+            this.panel1.Location = new System.Drawing.Point(111, 56);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(762, 384);
+            this.panel1.Size = new System.Drawing.Size(716, 423);
             this.panel1.TabIndex = 19;
+            // 
+            // BtnCadastrar
+            // 
+            this.BtnCadastrar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(180)))), ((int)(((byte)(158)))));
+            this.BtnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCadastrar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCadastrar.ForeColor = System.Drawing.Color.White;
+            this.BtnCadastrar.Location = new System.Drawing.Point(718, 18);
+            this.BtnCadastrar.Name = "BtnCadastrar";
+            this.BtnCadastrar.Size = new System.Drawing.Size(109, 26);
+            this.BtnCadastrar.TabIndex = 22;
+            this.BtnCadastrar.Text = "Criar novo";
+            this.BtnCadastrar.UseVisualStyleBackColor = false;
+            // 
+            // BtnBuscar
+            // 
+            this.BtnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(180)))), ((int)(((byte)(158)))));
+            this.BtnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnBuscar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnBuscar.ForeColor = System.Drawing.Color.White;
+            this.BtnBuscar.Location = new System.Drawing.Point(472, 20);
+            this.BtnBuscar.Name = "BtnBuscar";
+            this.BtnBuscar.Size = new System.Drawing.Size(98, 26);
+            this.BtnBuscar.TabIndex = 21;
+            this.BtnBuscar.Text = "Buscar";
+            this.BtnBuscar.UseVisualStyleBackColor = false;
             // 
             // TxtBoxPesquisar
             // 
-            this.TxtBoxPesquisar.Location = new System.Drawing.Point(203, 40);
+            this.TxtBoxPesquisar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtBoxPesquisar.Location = new System.Drawing.Point(216, 23);
             this.TxtBoxPesquisar.Multiline = true;
             this.TxtBoxPesquisar.Name = "TxtBoxPesquisar";
-            this.TxtBoxPesquisar.Size = new System.Drawing.Size(215, 21);
+            this.TxtBoxPesquisar.Size = new System.Drawing.Size(249, 21);
             this.TxtBoxPesquisar.TabIndex = 20;
-            // 
-            // BtnSalvar
-            // 
-            this.BtnSalvar.Location = new System.Drawing.Point(610, 342);
-            this.BtnSalvar.Name = "BtnSalvar";
-            this.BtnSalvar.Size = new System.Drawing.Size(119, 27);
-            this.BtnSalvar.TabIndex = 16;
-            this.BtnSalvar.Text = "Salvar";
-            this.BtnSalvar.UseVisualStyleBackColor = true;
             // 
             // LblPesquisar
             // 
             this.LblPesquisar.AutoSize = true;
-            this.LblPesquisar.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblPesquisar.Location = new System.Drawing.Point(101, 40);
+            this.LblPesquisar.BackColor = System.Drawing.Color.Transparent;
+            this.LblPesquisar.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblPesquisar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(103)))), ((int)(((byte)(84)))));
+            this.LblPesquisar.Location = new System.Drawing.Point(123, 22);
             this.LblPesquisar.Name = "LblPesquisar";
-            this.LblPesquisar.Size = new System.Drawing.Size(85, 21);
+            this.LblPesquisar.Size = new System.Drawing.Size(99, 22);
             this.LblPesquisar.TabIndex = 0;
             this.LblPesquisar.Text = "Pesquisar:";
-            // 
-            // BtnBuscar
-            // 
-            this.BtnBuscar.Location = new System.Drawing.Point(458, 37);
-            this.BtnBuscar.Name = "BtnBuscar";
-            this.BtnBuscar.Size = new System.Drawing.Size(119, 27);
-            this.BtnBuscar.TabIndex = 21;
-            this.BtnBuscar.Text = "Buscar";
-            this.BtnBuscar.UseVisualStyleBackColor = true;
-            // 
-            // BtnCadastrar
-            // 
-            this.BtnCadastrar.Location = new System.Drawing.Point(583, 36);
-            this.BtnCadastrar.Name = "BtnCadastrar";
-            this.BtnCadastrar.Size = new System.Drawing.Size(119, 27);
-            this.BtnCadastrar.TabIndex = 22;
-            this.BtnCadastrar.Text = "Cadastrar";
-            this.BtnCadastrar.UseVisualStyleBackColor = true;
             // 
             // TExibirPacientesADM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = global::VitalCare.Properties.Resources.Tela_Principal___Cuidador;
             this.ClientSize = new System.Drawing.Size(940, 512);
+            this.Controls.Add(this.BtnCadastrar);
             this.Controls.Add(this.BtnVoltar);
+            this.Controls.Add(this.BtnBuscar);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.LblPesquisar);
+            this.Controls.Add(this.TxtBoxPesquisar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "TExibirPacientesADM";
             this.Text = "TExibirPacientesADM";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -129,7 +133,6 @@ namespace VitalCare
         private System.Windows.Forms.Button BtnCadastrar;
         private System.Windows.Forms.Button BtnBuscar;
         private System.Windows.Forms.TextBox TxtBoxPesquisar;
-        private System.Windows.Forms.Button BtnSalvar;
         private System.Windows.Forms.Label LblPesquisar;
     }
 }
