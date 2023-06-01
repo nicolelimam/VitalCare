@@ -59,5 +59,11 @@ namespace VitalCare
         {
             abrirForms(new TCadastroProntuario());
         }
+
+        private void BtnPacientes_Click(object sender, EventArgs e)
+        {
+            TExibirPacientesADM x = new TExibirPacientesADM();
+            x.Show();
+        }
     }
 }

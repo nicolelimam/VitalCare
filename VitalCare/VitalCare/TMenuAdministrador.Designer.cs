@@ -140,6 +140,7 @@ namespace VitalCare
             this.BtnPacientes.TabIndex = 2;
             this.BtnPacientes.Text = "PACIENTES";
             this.BtnPacientes.UseVisualStyleBackColor = false;
+            this.BtnPacientes.Click += new System.EventHandler(this.BtnPacientes_Click);
             // 
             // BtnProntuario
             // 

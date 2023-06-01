@@ -16,5 +16,11 @@ namespace VitalCare
         {
             InitializeComponent();
         }
+
+        private void BtnCadastrar_Click(object sender, EventArgs e)
+        {
+            TCadastroPaciente x = new TCadastroPaciente();
+            x.Show();
+        }
     }
 }

@@ -30,18 +30,18 @@ namespace VitalCare
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.TxtBoxNome = new System.Windows.Forms.TextBox();
-            this.ComboBoxNQuarto = new System.Windows.Forms.ComboBox();
-            this.TxtBoxTelResponsavel = new System.Windows.Forms.TextBox();
-            this.TxtBoxNomeResponsavel = new System.Windows.Forms.TextBox();
+            this.campoNome = new System.Windows.Forms.TextBox();
+            this.campoQuarto = new System.Windows.Forms.ComboBox();
+            this.campoTelefone = new System.Windows.Forms.TextBox();
+            this.campoResponsavel = new System.Windows.Forms.TextBox();
             this.BtnSalvar = new System.Windows.Forms.Button();
-            this.TxtBoxNasc = new System.Windows.Forms.TextBox();
+            this.campoNasc = new System.Windows.Forms.TextBox();
             this.LblNQuarto = new System.Windows.Forms.Label();
             this.LblTelResponsavel = new System.Windows.Forms.Label();
             this.LblNomeResponsavel = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.LblNome = new System.Windows.Forms.Label();
             this.BtnVoltar = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.titulopanel = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -50,12 +50,12 @@ namespace VitalCare
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(251)))), ((int)(((byte)(240)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.TxtBoxNome);
-            this.panel1.Controls.Add(this.ComboBoxNQuarto);
-            this.panel1.Controls.Add(this.TxtBoxTelResponsavel);
-            this.panel1.Controls.Add(this.TxtBoxNomeResponsavel);
+            this.panel1.Controls.Add(this.campoNome);
+            this.panel1.Controls.Add(this.campoQuarto);
+            this.panel1.Controls.Add(this.campoTelefone);
+            this.panel1.Controls.Add(this.campoResponsavel);
             this.panel1.Controls.Add(this.BtnSalvar);
-            this.panel1.Controls.Add(this.TxtBoxNasc);
+            this.panel1.Controls.Add(this.campoNasc);
             this.panel1.Controls.Add(this.LblNQuarto);
             this.panel1.Controls.Add(this.LblTelResponsavel);
             this.panel1.Controls.Add(this.LblNomeResponsavel);
@@ -66,41 +66,41 @@ namespace VitalCare
             this.panel1.Size = new System.Drawing.Size(679, 293);
             this.panel1.TabIndex = 1;
             // 
-            // TxtBoxNome
+            // campoNome
             // 
-            this.TxtBoxNome.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBoxNome.Location = new System.Drawing.Point(136, 61);
-            this.TxtBoxNome.Multiline = true;
-            this.TxtBoxNome.Name = "TxtBoxNome";
-            this.TxtBoxNome.Size = new System.Drawing.Size(215, 21);
-            this.TxtBoxNome.TabIndex = 20;
+            this.campoNome.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.campoNome.Location = new System.Drawing.Point(136, 61);
+            this.campoNome.Multiline = true;
+            this.campoNome.Name = "campoNome";
+            this.campoNome.Size = new System.Drawing.Size(215, 21);
+            this.campoNome.TabIndex = 20;
             // 
-            // ComboBoxNQuarto
+            // campoQuarto
             // 
-            this.ComboBoxNQuarto.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ComboBoxNQuarto.FormattingEnabled = true;
-            this.ComboBoxNQuarto.Location = new System.Drawing.Point(196, 186);
-            this.ComboBoxNQuarto.Name = "ComboBoxNQuarto";
-            this.ComboBoxNQuarto.Size = new System.Drawing.Size(90, 25);
-            this.ComboBoxNQuarto.TabIndex = 19;
+            this.campoQuarto.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.campoQuarto.FormattingEnabled = true;
+            this.campoQuarto.Location = new System.Drawing.Point(196, 186);
+            this.campoQuarto.Name = "campoQuarto";
+            this.campoQuarto.Size = new System.Drawing.Size(90, 25);
+            this.campoQuarto.TabIndex = 19;
             // 
-            // TxtBoxTelResponsavel
+            // campoTelefone
             // 
-            this.TxtBoxTelResponsavel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBoxTelResponsavel.Location = new System.Drawing.Point(268, 142);
-            this.TxtBoxTelResponsavel.Multiline = true;
-            this.TxtBoxTelResponsavel.Name = "TxtBoxTelResponsavel";
-            this.TxtBoxTelResponsavel.Size = new System.Drawing.Size(323, 21);
-            this.TxtBoxTelResponsavel.TabIndex = 18;
+            this.campoTelefone.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.campoTelefone.Location = new System.Drawing.Point(268, 142);
+            this.campoTelefone.Multiline = true;
+            this.campoTelefone.Name = "campoTelefone";
+            this.campoTelefone.Size = new System.Drawing.Size(323, 21);
+            this.campoTelefone.TabIndex = 18;
             // 
-            // TxtBoxNomeResponsavel
+            // campoResponsavel
             // 
-            this.TxtBoxNomeResponsavel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBoxNomeResponsavel.Location = new System.Drawing.Point(260, 102);
-            this.TxtBoxNomeResponsavel.Multiline = true;
-            this.TxtBoxNomeResponsavel.Name = "TxtBoxNomeResponsavel";
-            this.TxtBoxNomeResponsavel.Size = new System.Drawing.Size(332, 21);
-            this.TxtBoxNomeResponsavel.TabIndex = 17;
+            this.campoResponsavel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.campoResponsavel.Location = new System.Drawing.Point(260, 102);
+            this.campoResponsavel.Multiline = true;
+            this.campoResponsavel.Name = "campoResponsavel";
+            this.campoResponsavel.Size = new System.Drawing.Size(332, 21);
+            this.campoResponsavel.TabIndex = 17;
             // 
             // BtnSalvar
             // 
@@ -115,15 +115,16 @@ namespace VitalCare
             this.BtnSalvar.TabIndex = 16;
             this.BtnSalvar.Text = "Salvar";
             this.BtnSalvar.UseVisualStyleBackColor = false;
+            this.BtnSalvar.Click += new System.EventHandler(this.BtnSalvar_Click);
             // 
-            // TxtBoxNasc
+            // campoNasc
             // 
-            this.TxtBoxNasc.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBoxNasc.Location = new System.Drawing.Point(474, 61);
-            this.TxtBoxNasc.Multiline = true;
-            this.TxtBoxNasc.Name = "TxtBoxNasc";
-            this.TxtBoxNasc.Size = new System.Drawing.Size(118, 21);
-            this.TxtBoxNasc.TabIndex = 6;
+            this.campoNasc.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.campoNasc.Location = new System.Drawing.Point(474, 61);
+            this.campoNasc.Multiline = true;
+            this.campoNasc.Name = "campoNasc";
+            this.campoNasc.Size = new System.Drawing.Size(118, 21);
+            this.campoNasc.TabIndex = 6;
             // 
             // LblNQuarto
             // 
@@ -155,6 +156,17 @@ namespace VitalCare
             this.LblNomeResponsavel.TabIndex = 2;
             this.LblNomeResponsavel.Text = "Nome do responsável:";
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(360, 61);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(108, 21);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Nascimento:";
+            this.label1.Click += new System.EventHandler(this.LblIdade_Click);
+            // 
             // LblNome
             // 
             this.LblNome.AutoSize = true;
@@ -178,17 +190,6 @@ namespace VitalCare
             this.BtnVoltar.TabIndex = 18;
             this.BtnVoltar.Text = "Voltar";
             this.BtnVoltar.UseVisualStyleBackColor = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(360, 61);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 21);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Nascimento:";
-            this.label1.Click += new System.EventHandler(this.LblIdade_Click);
             // 
             // titulopanel
             // 
@@ -225,15 +226,15 @@ namespace VitalCare
 
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button BtnSalvar;
-        private System.Windows.Forms.TextBox TxtBoxNasc;
+        private System.Windows.Forms.TextBox campoNasc;
         private System.Windows.Forms.Label LblNQuarto;
         private System.Windows.Forms.Label LblTelResponsavel;
         private System.Windows.Forms.Label LblNomeResponsavel;
         private System.Windows.Forms.Label LblNome;
-        private System.Windows.Forms.ComboBox ComboBoxNQuarto;
-        private System.Windows.Forms.TextBox TxtBoxTelResponsavel;
-        private System.Windows.Forms.TextBox TxtBoxNomeResponsavel;
-        private System.Windows.Forms.TextBox TxtBoxNome;
+        private System.Windows.Forms.ComboBox campoQuarto;
+        private System.Windows.Forms.TextBox campoTelefone;
+        private System.Windows.Forms.TextBox campoResponsavel;
+        private System.Windows.Forms.TextBox campoNome;
         private System.Windows.Forms.Button BtnVoltar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label titulopanel;

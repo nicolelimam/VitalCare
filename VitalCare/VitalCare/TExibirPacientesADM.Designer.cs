@@ -71,6 +71,7 @@ namespace VitalCare
             this.BtnCadastrar.TabIndex = 22;
             this.BtnCadastrar.Text = "Criar novo";
             this.BtnCadastrar.UseVisualStyleBackColor = false;
+            this.BtnCadastrar.Click += new System.EventHandler(this.BtnCadastrar_Click);
             // 
             // BtnBuscar
             // 
