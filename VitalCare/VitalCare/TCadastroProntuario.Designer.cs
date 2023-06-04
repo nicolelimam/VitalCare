@@ -30,6 +30,8 @@ namespace VitalCare
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.TxtBoxMedico = new System.Windows.Forms.TextBox();
+            this.LblMedico = new System.Windows.Forms.Label();
             this.BtnSalvar = new System.Windows.Forms.Button();
             this.campoMedicamentos = new System.Windows.Forms.ComboBox();
             this.campoComorbidades = new System.Windows.Forms.ComboBox();
@@ -43,8 +45,6 @@ namespace VitalCare
             this.LblNome = new System.Windows.Forms.Label();
             this.BtnVoltar = new System.Windows.Forms.Button();
             this.titulopanel = new System.Windows.Forms.Label();
-            this.LblMedico = new System.Windows.Forms.Label();
-            this.TxtBoxMedico = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -69,6 +69,27 @@ namespace VitalCare
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(553, 395);
             this.panel1.TabIndex = 0;
+            // 
+            // TxtBoxMedico
+            // 
+            this.TxtBoxMedico.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TxtBoxMedico.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtBoxMedico.Location = new System.Drawing.Point(116, 89);
+            this.TxtBoxMedico.Multiline = true;
+            this.TxtBoxMedico.Name = "TxtBoxMedico";
+            this.TxtBoxMedico.Size = new System.Drawing.Size(380, 21);
+            this.TxtBoxMedico.TabIndex = 18;
+            // 
+            // LblMedico
+            // 
+            this.LblMedico.AutoSize = true;
+            this.LblMedico.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblMedico.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(103)))), ((int)(((byte)(84)))));
+            this.LblMedico.Location = new System.Drawing.Point(37, 88);
+            this.LblMedico.Name = "LblMedico";
+            this.LblMedico.Size = new System.Drawing.Size(73, 21);
+            this.LblMedico.TabIndex = 17;
+            this.LblMedico.Text = "Médico:";
             // 
             // BtnSalvar
             // 
@@ -108,6 +129,7 @@ namespace VitalCare
             // 
             // campoObservacao
             // 
+            this.campoObservacao.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.campoObservacao.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.campoObservacao.Location = new System.Drawing.Point(173, 230);
             this.campoObservacao.Multiline = true;
@@ -137,6 +159,7 @@ namespace VitalCare
             // 
             this.LblObservacoes.AutoSize = true;
             this.LblObservacoes.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblObservacoes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(103)))), ((int)(((byte)(84)))));
             this.LblObservacoes.Location = new System.Drawing.Point(37, 227);
             this.LblObservacoes.Name = "LblObservacoes";
             this.LblObservacoes.Size = new System.Drawing.Size(117, 21);
@@ -147,6 +170,7 @@ namespace VitalCare
             // 
             this.LblMedicamentos.AutoSize = true;
             this.LblMedicamentos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblMedicamentos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(103)))), ((int)(((byte)(84)))));
             this.LblMedicamentos.Location = new System.Drawing.Point(37, 179);
             this.LblMedicamentos.Name = "LblMedicamentos";
             this.LblMedicamentos.Size = new System.Drawing.Size(132, 21);
@@ -157,6 +181,7 @@ namespace VitalCare
             // 
             this.LblComorbidades.AutoSize = true;
             this.LblComorbidades.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblComorbidades.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(103)))), ((int)(((byte)(84)))));
             this.LblComorbidades.Location = new System.Drawing.Point(37, 136);
             this.LblComorbidades.Name = "LblComorbidades";
             this.LblComorbidades.Size = new System.Drawing.Size(130, 21);
@@ -167,6 +192,7 @@ namespace VitalCare
             // 
             this.LblIdade.AutoSize = true;
             this.LblIdade.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblIdade.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(103)))), ((int)(((byte)(84)))));
             this.LblIdade.Location = new System.Drawing.Point(331, 47);
             this.LblIdade.Name = "LblIdade";
             this.LblIdade.Size = new System.Drawing.Size(62, 21);
@@ -177,6 +203,7 @@ namespace VitalCare
             // 
             this.LblNome.AutoSize = true;
             this.LblNome.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblNome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(103)))), ((int)(((byte)(84)))));
             this.LblNome.Location = new System.Drawing.Point(37, 47);
             this.LblNome.Name = "LblNome";
             this.LblNome.Size = new System.Drawing.Size(61, 21);
@@ -208,25 +235,6 @@ namespace VitalCare
             this.titulopanel.Size = new System.Drawing.Size(400, 30);
             this.titulopanel.TabIndex = 20;
             this.titulopanel.Text = "CADASTRAR NOVO PRONTUÁRIO";
-            // 
-            // LblMedico
-            // 
-            this.LblMedico.AutoSize = true;
-            this.LblMedico.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblMedico.Location = new System.Drawing.Point(37, 88);
-            this.LblMedico.Name = "LblMedico";
-            this.LblMedico.Size = new System.Drawing.Size(73, 21);
-            this.LblMedico.TabIndex = 17;
-            this.LblMedico.Text = "Medico:";
-            // 
-            // TxtBoxMedico
-            // 
-            this.TxtBoxMedico.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBoxMedico.Location = new System.Drawing.Point(116, 89);
-            this.TxtBoxMedico.Multiline = true;
-            this.TxtBoxMedico.Name = "TxtBoxMedico";
-            this.TxtBoxMedico.Size = new System.Drawing.Size(380, 21);
-            this.TxtBoxMedico.TabIndex = 18;
             // 
             // TCadastroProntuario
             // 

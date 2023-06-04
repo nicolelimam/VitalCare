@@ -108,5 +108,17 @@ namespace VitalCare
             TMenuAdministrador x = new TMenuAdministrador();
             x.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            TExibirProntuarioCuidador p = new TExibirProntuarioCuidador();
+            p.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            TMenuCuidador n = new TMenuCuidador();
+            n.Show();
+        }
     }
 }

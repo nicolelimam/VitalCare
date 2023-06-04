@@ -52,7 +52,7 @@ namespace VitalCare
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            abrirForms(new TExibirUsuariosADM());
         }
 
         private void BtnProntuario_Click(object sender, EventArgs e)
@@ -62,8 +62,7 @@ namespace VitalCare
 
         private void BtnPacientes_Click(object sender, EventArgs e)
         {
-            TExibirPacientesADM x = new TExibirPacientesADM();
-            x.Show();
+            abrirForms(new TExibirPacientesADM());
         }
     }
 }

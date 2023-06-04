@@ -95,6 +95,12 @@
   <ItemGroup>
     <Compile Include="Conexao.cs" />
     <Compile Include="FontAwesome\Resources.cs" />
+    <Compile Include="PacienteUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PacienteUC.Designer.cs">
+      <DependentUpon>PacienteUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="TCadastro.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -113,6 +119,12 @@
     <Compile Include="TCadastroProntuario.Designer.cs">
       <DependentUpon>TCadastroProntuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="TCadastroUsuarioADM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TCadastroUsuarioADM.Designer.cs">
+      <DependentUpon>TCadastroUsuarioADM.cs</DependentUpon>
+    </Compile>
     <Compile Include="TCalendario.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +142,18 @@
     </Compile>
     <Compile Include="TExibirPacientesADM.Designer.cs">
       <DependentUpon>TExibirPacientesADM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TExibirProntuarioCuidador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TExibirProntuarioCuidador.Designer.cs">
+      <DependentUpon>TExibirProntuarioCuidador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TExibirUsuariosADM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TExibirUsuariosADM.Designer.cs">
+      <DependentUpon>TExibirUsuariosADM.cs</DependentUpon>
     </Compile>
     <Compile Include="TInicial.cs">
       <SubType>Form</SubType>
@@ -157,12 +181,21 @@
     <Compile Include="TMenuCuidador.Designer.cs">
       <DependentUpon>TMenuCuidador.cs</DependentUpon>
     </Compile>
-    <Compile Include="TProntuariosCuidador.cs">
+    <Compile Include="TPacientesCuidador.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TProntuariosCuidador.Designer.cs">
-      <DependentUpon>TProntuariosCuidador.cs</DependentUpon>
+    <Compile Include="TPacientesCuidador.Designer.cs">
+      <DependentUpon>TPacientesCuidador.cs</DependentUpon>
     </Compile>
+    <Compile Include="UsuarioUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UsuarioUC.Designer.cs">
+      <DependentUpon>UsuarioUC.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="PacienteUC.resx">
+      <DependentUpon>PacienteUC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TCadastro.resx">
       <DependentUpon>TCadastro.cs</DependentUpon>
     </EmbeddedResource>
@@ -172,6 +205,9 @@
     <EmbeddedResource Include="TCadastroProntuario.resx">
       <DependentUpon>TCadastroProntuario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TCadastroUsuarioADM.resx">
+      <DependentUpon>TCadastroUsuarioADM.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TCalendario.resx">
       <DependentUpon>TCalendario.cs</DependentUpon>
     </EmbeddedResource>
@@ -180,6 +216,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TExibirPacientesADM.resx">
       <DependentUpon>TExibirPacientesADM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TExibirProntuarioCuidador.resx">
+      <DependentUpon>TExibirProntuarioCuidador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TExibirUsuariosADM.resx">
+      <DependentUpon>TExibirUsuariosADM.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TInicial.resx">
       <DependentUpon>TInicial.cs</DependentUpon>
@@ -203,8 +245,11 @@
     <EmbeddedResource Include="TMenuCuidador.resx">
       <DependentUpon>TMenuCuidador.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TProntuariosCuidador.resx">
-      <DependentUpon>TProntuariosCuidador.cs</DependentUpon>
+    <EmbeddedResource Include="TPacientesCuidador.resx">
+      <DependentUpon>TPacientesCuidador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsuarioUC.resx">
+      <DependentUpon>UsuarioUC.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

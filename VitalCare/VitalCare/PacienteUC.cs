@@ -10,20 +10,19 @@ using System.Windows.Forms;
 
 namespace VitalCare
 {
-    public partial class TExibirPacientesADM : Form
+    public partial class PacienteUC : UserControl
     {
-        public TExibirPacientesADM()
+        public PacienteUC()
         {
             InitializeComponent();
         }
 
-        private void BtnCadastrar_Click(object sender, EventArgs e)
+        private void BtnProntuário_Click(object sender, EventArgs e)
         {
-            TCadastroPaciente x = new TCadastroPaciente();
-            
+            TExibirProntuarioCuidador x = new TExibirProntuarioCuidador();
+            x.ShowDialog();
             x.FormBorderStyle = FormBorderStyle.FixedDialog;
             x.StartPosition = FormStartPosition.CenterParent;
-            x.ShowDialog();
         }
     }
 }

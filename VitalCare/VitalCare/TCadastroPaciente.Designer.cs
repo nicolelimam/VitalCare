@@ -30,6 +30,10 @@ namespace VitalCare
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.TxtBoxCpf = new System.Windows.Forms.TextBox();
+            this.LblCpf = new System.Windows.Forms.Label();
+            this.TxtBoxRg = new System.Windows.Forms.TextBox();
+            this.LblRg = new System.Windows.Forms.Label();
             this.campoNome = new System.Windows.Forms.TextBox();
             this.campoQuarto = new System.Windows.Forms.ComboBox();
             this.campoTelefone = new System.Windows.Forms.TextBox();
@@ -41,12 +45,7 @@ namespace VitalCare
             this.LblNomeResponsavel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.LblNome = new System.Windows.Forms.Label();
-            this.BtnVoltar = new System.Windows.Forms.Button();
             this.titulopanel = new System.Windows.Forms.Label();
-            this.LblRg = new System.Windows.Forms.Label();
-            this.TxtBoxRg = new System.Windows.Forms.TextBox();
-            this.LblCpf = new System.Windows.Forms.Label();
-            this.TxtBoxCpf = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -73,6 +72,45 @@ namespace VitalCare
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(679, 293);
             this.panel1.TabIndex = 1;
+            // 
+            // TxtBoxCpf
+            // 
+            this.TxtBoxCpf.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtBoxCpf.Location = new System.Drawing.Point(410, 101);
+            this.TxtBoxCpf.Multiline = true;
+            this.TxtBoxCpf.Name = "TxtBoxCpf";
+            this.TxtBoxCpf.Size = new System.Drawing.Size(233, 21);
+            this.TxtBoxCpf.TabIndex = 24;
+            // 
+            // LblCpf
+            // 
+            this.LblCpf.AutoSize = true;
+            this.LblCpf.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblCpf.Location = new System.Drawing.Point(360, 100);
+            this.LblCpf.Name = "LblCpf";
+            this.LblCpf.Size = new System.Drawing.Size(44, 21);
+            this.LblCpf.TabIndex = 23;
+            this.LblCpf.Text = "CPF:";
+            // 
+            // TxtBoxRg
+            // 
+            this.TxtBoxRg.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtBoxRg.Location = new System.Drawing.Point(113, 100);
+            this.TxtBoxRg.Multiline = true;
+            this.TxtBoxRg.Name = "TxtBoxRg";
+            this.TxtBoxRg.Size = new System.Drawing.Size(233, 21);
+            this.TxtBoxRg.TabIndex = 22;
+            // 
+            // LblRg
+            // 
+            this.LblRg.AutoSize = true;
+            this.LblRg.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblRg.Location = new System.Drawing.Point(69, 99);
+            this.LblRg.Name = "LblRg";
+            this.LblRg.Size = new System.Drawing.Size(38, 21);
+            this.LblRg.TabIndex = 21;
+            this.LblRg.Text = "RG:";
+            this.LblRg.Click += new System.EventHandler(this.label2_Click);
             // 
             // campoNome
             // 
@@ -185,20 +223,6 @@ namespace VitalCare
             this.LblNome.TabIndex = 0;
             this.LblNome.Text = "Nome:";
             // 
-            // BtnVoltar
-            // 
-            this.BtnVoltar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(180)))), ((int)(((byte)(158)))));
-            this.BtnVoltar.FlatAppearance.BorderSize = 0;
-            this.BtnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnVoltar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnVoltar.ForeColor = System.Drawing.Color.White;
-            this.BtnVoltar.Location = new System.Drawing.Point(830, 473);
-            this.BtnVoltar.Name = "BtnVoltar";
-            this.BtnVoltar.Size = new System.Drawing.Size(88, 27);
-            this.BtnVoltar.TabIndex = 18;
-            this.BtnVoltar.Text = "Voltar";
-            this.BtnVoltar.UseVisualStyleBackColor = false;
-            // 
             // titulopanel
             // 
             this.titulopanel.AutoSize = true;
@@ -210,45 +234,6 @@ namespace VitalCare
             this.titulopanel.TabIndex = 19;
             this.titulopanel.Text = "CADASTRAR NOVO PACIENTE";
             // 
-            // LblRg
-            // 
-            this.LblRg.AutoSize = true;
-            this.LblRg.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblRg.Location = new System.Drawing.Point(69, 99);
-            this.LblRg.Name = "LblRg";
-            this.LblRg.Size = new System.Drawing.Size(38, 21);
-            this.LblRg.TabIndex = 21;
-            this.LblRg.Text = "RG:";
-            this.LblRg.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // TxtBoxRg
-            // 
-            this.TxtBoxRg.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBoxRg.Location = new System.Drawing.Point(113, 100);
-            this.TxtBoxRg.Multiline = true;
-            this.TxtBoxRg.Name = "TxtBoxRg";
-            this.TxtBoxRg.Size = new System.Drawing.Size(233, 21);
-            this.TxtBoxRg.TabIndex = 22;
-            // 
-            // LblCpf
-            // 
-            this.LblCpf.AutoSize = true;
-            this.LblCpf.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblCpf.Location = new System.Drawing.Point(360, 100);
-            this.LblCpf.Name = "LblCpf";
-            this.LblCpf.Size = new System.Drawing.Size(44, 21);
-            this.LblCpf.TabIndex = 23;
-            this.LblCpf.Text = "CPF:";
-            // 
-            // TxtBoxCpf
-            // 
-            this.TxtBoxCpf.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBoxCpf.Location = new System.Drawing.Point(410, 101);
-            this.TxtBoxCpf.Multiline = true;
-            this.TxtBoxCpf.Name = "TxtBoxCpf";
-            this.TxtBoxCpf.Size = new System.Drawing.Size(233, 21);
-            this.TxtBoxCpf.TabIndex = 24;
-            // 
             // TCadastroPaciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -256,11 +241,13 @@ namespace VitalCare
             this.BackgroundImage = global::VitalCare.Properties.Resources.Tela_Principal___Cuidador;
             this.ClientSize = new System.Drawing.Size(940, 512);
             this.Controls.Add(this.titulopanel);
-            this.Controls.Add(this.BtnVoltar);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(103)))), ((int)(((byte)(84)))));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "TCadastroPaciente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TCadastroPaciente";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
@@ -282,7 +269,6 @@ namespace VitalCare
         private System.Windows.Forms.TextBox campoTelefone;
         private System.Windows.Forms.TextBox campoResponsavel;
         private System.Windows.Forms.TextBox campoNome;
-        private System.Windows.Forms.Button BtnVoltar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label titulopanel;
         private System.Windows.Forms.Label LblRg;
