@@ -59,7 +59,7 @@ namespace VitalCare
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            abrirForms(new TProntuariosCuidador());
+            
             
         }
 
@@ -100,6 +100,11 @@ namespace VitalCare
             this.Hide();
             TLogin x = new TLogin();
             x.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            abrirForms(new TPacientesCuidador());
         }
     }
 }

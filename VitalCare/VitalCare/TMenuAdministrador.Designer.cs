@@ -31,11 +31,12 @@ namespace VitalCare
         {
             this.panelprincipal = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.BtnUsuarios = new System.Windows.Forms.Button();
+            this.BtnSair = new System.Windows.Forms.Button();
             this.logo = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.botaoSair = new System.Windows.Forms.Button();
+            this.BtnCalendario = new System.Windows.Forms.Button();
+            this.BtnPacientes = new System.Windows.Forms.Button();
+            this.BtnProntuario = new System.Windows.Forms.Button();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
             this.SuspendLayout();
@@ -57,11 +58,12 @@ namespace VitalCare
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(180)))), ((int)(((byte)(158)))));
-            this.panel4.Controls.Add(this.botaoSair);
+            this.panel4.Controls.Add(this.BtnUsuarios);
+            this.panel4.Controls.Add(this.BtnSair);
             this.panel4.Controls.Add(this.logo);
-            this.panel4.Controls.Add(this.button3);
-            this.panel4.Controls.Add(this.button1);
-            this.panel4.Controls.Add(this.button2);
+            this.panel4.Controls.Add(this.BtnCalendario);
+            this.panel4.Controls.Add(this.BtnPacientes);
+            this.panel4.Controls.Add(this.BtnProntuario);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.MaximumSize = new System.Drawing.Size(1920, 45);
@@ -69,6 +71,36 @@ namespace VitalCare
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(948, 45);
             this.panel4.TabIndex = 5;
+            // 
+            // BtnUsuarios
+            // 
+            this.BtnUsuarios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(180)))), ((int)(((byte)(158)))));
+            this.BtnUsuarios.FlatAppearance.BorderSize = 0;
+            this.BtnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnUsuarios.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnUsuarios.ForeColor = System.Drawing.Color.White;
+            this.BtnUsuarios.Location = new System.Drawing.Point(249, 1);
+            this.BtnUsuarios.Name = "BtnUsuarios";
+            this.BtnUsuarios.Size = new System.Drawing.Size(136, 42);
+            this.BtnUsuarios.TabIndex = 6;
+            this.BtnUsuarios.Text = "USUÁRIOS";
+            this.BtnUsuarios.UseVisualStyleBackColor = false;
+            this.BtnUsuarios.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // BtnSair
+            // 
+            this.BtnSair.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(180)))), ((int)(((byte)(158)))));
+            this.BtnSair.FlatAppearance.BorderSize = 0;
+            this.BtnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnSair.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnSair.ForeColor = System.Drawing.Color.White;
+            this.BtnSair.Location = new System.Drawing.Point(809, 1);
+            this.BtnSair.Name = "BtnSair";
+            this.BtnSair.Size = new System.Drawing.Size(136, 42);
+            this.BtnSair.TabIndex = 5;
+            this.BtnSair.Text = "SAIR";
+            this.BtnSair.UseVisualStyleBackColor = false;
+            this.BtnSair.Click += new System.EventHandler(this.botaoSair_Click);
             // 
             // logo
             // 
@@ -80,62 +112,50 @@ namespace VitalCare
             this.logo.TabIndex = 1;
             this.logo.TabStop = false;
             // 
-            // button3
+            // BtnCalendario
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(180)))), ((int)(((byte)(158)))));
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(675, 1);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(136, 42);
-            this.button3.TabIndex = 4;
-            this.button3.Text = "PACIENTES";
-            this.button3.UseVisualStyleBackColor = false;
+            this.BtnCalendario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(180)))), ((int)(((byte)(158)))));
+            this.BtnCalendario.FlatAppearance.BorderSize = 0;
+            this.BtnCalendario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCalendario.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCalendario.ForeColor = System.Drawing.Color.White;
+            this.BtnCalendario.Location = new System.Drawing.Point(675, 1);
+            this.BtnCalendario.Name = "BtnCalendario";
+            this.BtnCalendario.Size = new System.Drawing.Size(136, 42);
+            this.BtnCalendario.TabIndex = 4;
+            this.BtnCalendario.Text = "CALENDÁRIO";
+            this.BtnCalendario.UseVisualStyleBackColor = false;
+            this.BtnCalendario.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button1
+            // BtnPacientes
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(180)))), ((int)(((byte)(158)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(391, 1);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(136, 42);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "USUÁRIOS";
-            this.button1.UseVisualStyleBackColor = false;
+            this.BtnPacientes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(180)))), ((int)(((byte)(158)))));
+            this.BtnPacientes.FlatAppearance.BorderSize = 0;
+            this.BtnPacientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnPacientes.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnPacientes.ForeColor = System.Drawing.Color.White;
+            this.BtnPacientes.Location = new System.Drawing.Point(391, 1);
+            this.BtnPacientes.Name = "BtnPacientes";
+            this.BtnPacientes.Size = new System.Drawing.Size(136, 42);
+            this.BtnPacientes.TabIndex = 2;
+            this.BtnPacientes.Text = "PACIENTES";
+            this.BtnPacientes.UseVisualStyleBackColor = false;
+            this.BtnPacientes.Click += new System.EventHandler(this.BtnPacientes_Click);
             // 
-            // button2
+            // BtnProntuario
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(180)))), ((int)(((byte)(158)))));
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(533, 1);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(136, 42);
-            this.button2.TabIndex = 3;
-            this.button2.Text = "CALENDÁRIO";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // botaoSair
-            // 
-            this.botaoSair.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(180)))), ((int)(((byte)(158)))));
-            this.botaoSair.FlatAppearance.BorderSize = 0;
-            this.botaoSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.botaoSair.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botaoSair.ForeColor = System.Drawing.Color.White;
-            this.botaoSair.Location = new System.Drawing.Point(809, 1);
-            this.botaoSair.Name = "botaoSair";
-            this.botaoSair.Size = new System.Drawing.Size(136, 42);
-            this.botaoSair.TabIndex = 5;
-            this.botaoSair.Text = "SAIR";
-            this.botaoSair.UseVisualStyleBackColor = false;
-            this.botaoSair.Click += new System.EventHandler(this.botaoSair_Click);
+            this.BtnProntuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(180)))), ((int)(((byte)(158)))));
+            this.BtnProntuario.FlatAppearance.BorderSize = 0;
+            this.BtnProntuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnProntuario.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnProntuario.ForeColor = System.Drawing.Color.White;
+            this.BtnProntuario.Location = new System.Drawing.Point(533, 1);
+            this.BtnProntuario.Name = "BtnProntuario";
+            this.BtnProntuario.Size = new System.Drawing.Size(136, 42);
+            this.BtnProntuario.TabIndex = 3;
+            this.BtnProntuario.Text = "PRONTUÁRIO";
+            this.BtnProntuario.UseVisualStyleBackColor = false;
+            this.BtnProntuario.Click += new System.EventHandler(this.BtnProntuario_Click);
             // 
             // TMenuAdministrador
             // 
@@ -161,9 +181,10 @@ namespace VitalCare
         private System.Windows.Forms.Panel panelprincipal;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox logo;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button botaoSair;
+        private System.Windows.Forms.Button BtnCalendario;
+        private System.Windows.Forms.Button BtnPacientes;
+        private System.Windows.Forms.Button BtnProntuario;
+        private System.Windows.Forms.Button BtnSair;
+        private System.Windows.Forms.Button BtnUsuarios;
     }
 }

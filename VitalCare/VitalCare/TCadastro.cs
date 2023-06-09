@@ -29,12 +29,12 @@ namespace VitalCare
 
             try
             {
-                string query = "INSERT INTO banco_teste (email, senha) VALUES (@Email, @Senha)";
+                string query = "INSERT INTO dados_login (email, senha) VALUES (@Email, @Senha)";
                 MySqlCommand command = new MySqlCommand(query, connection);
                 command.Parameters.AddWithValue("@Email", email);
                 command.Parameters.AddWithValue("@Senha", senha);
                 command.ExecuteNonQuery();
-                MessageBox.Show("Dados inseridos com sucesso!");
+                MessageBox.Show("Dados Salvos com Sucesso!");
 
                 var TelaLogin = new TLogin();
                 TelaLogin.Show();
@@ -43,6 +43,11 @@ namespace VitalCare
             {
                 MessageBox.Show("Erro ao inserir dados: ");
             }
+
+        }
+
+        private void campoEmail_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }

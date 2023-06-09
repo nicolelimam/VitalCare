@@ -78,6 +78,7 @@ namespace VitalCare
             this.campoEmail.Name = "campoEmail";
             this.campoEmail.Size = new System.Drawing.Size(100, 20);
             this.campoEmail.TabIndex = 7;
+            this.campoEmail.TextChanged += new System.EventHandler(this.campoEmail_TextChanged);
             // 
             // botaoClick
             // 
