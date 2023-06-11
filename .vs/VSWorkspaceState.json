@@ -1,8 +1,13 @@
 {
   "ExpandedNodes": [
     "",
-    "\\VitalCare"
+    "\\VitalCare",
+    "\\VitalCare-AdmFeito",
+    "\\VitalCare-AdmFeito\\VitalCare",
+    "\\VitalCare-AdmFeito\\VitalCare\\packages",
+    "\\VitalCare-AdmFeito\\VitalCare\\VitalCare",
+    "\\VitalCare\\VitalCare"
   ],
-  "SelectedNode": "\\VitalCare\\VitalCare.sln",
+  "SelectedNode": "\\VitalCare\\VitalCare\\TLogin.cs",
   "PreviewInSolutionExplorer": false
 }

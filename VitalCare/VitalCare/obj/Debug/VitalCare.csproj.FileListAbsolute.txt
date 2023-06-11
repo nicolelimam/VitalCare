@@ -122,7 +122,6 @@ C:\Users\NANABE\Documents\GitHub\VitalCare\VitalCare\VitalCare\obj\Debug\VitalCa
 C:\Users\NANABE\Documents\GitHub\VitalCare\VitalCare\VitalCare\obj\Debug\VitalCare.Properties.Resources.resources
 C:\Users\NANABE\Documents\GitHub\VitalCare\VitalCare\VitalCare\obj\Debug\VitalCare.TMenuAdministrador.resources
 C:\Users\NANABE\Documents\GitHub\VitalCare\VitalCare\VitalCare\obj\Debug\VitalCare.TMenuCuidador.resources
-C:\Users\NANABE\Documents\GitHub\VitalCare\VitalCare\VitalCare\obj\Debug\VitalCare.TProntuariosCuidador.resources
 C:\Users\NANABE\Documents\GitHub\VitalCare\VitalCare\VitalCare\obj\Debug\VitalCare.csproj.GenerateResource.cache
 C:\Users\NANABE\Documents\GitHub\VitalCare\VitalCare\VitalCare\obj\Debug\VitalCare.csproj.CoreCompileInputs.cache
 C:\Users\NANABE\Documents\GitHub\VitalCare\VitalCare\VitalCare\obj\Debug\VitalCare.csproj.CopyComplete
@@ -166,3 +165,9 @@ C:\Users\nicol\OneDrive\Documentos\Repositorios\VitalCare\VitalCare\VitalCare\ob
 C:\Users\nicol\OneDrive\Documentos\Repositorios\VitalCare\VitalCare\VitalCare\obj\Debug\VitalCare.PacienteUC.resources
 C:\Users\nicol\OneDrive\Documentos\Repositorios\VitalCare\VitalCare\VitalCare\obj\Debug\VitalCare.UsuarioUC.resources
 C:\Users\nicol\OneDrive\Documentos\Repositorios\VitalCare\VitalCare\VitalCare\obj\Debug\VitalCare.TPacientesCuidador.resources
+C:\Users\NANABE\Documents\GitHub\VitalCare\VitalCare\VitalCare\obj\Debug\VitalCare.PacienteUC.resources
+C:\Users\NANABE\Documents\GitHub\VitalCare\VitalCare\VitalCare\obj\Debug\VitalCare.TCadastroUsuarioADM.resources
+C:\Users\NANABE\Documents\GitHub\VitalCare\VitalCare\VitalCare\obj\Debug\VitalCare.TExibirProntuarioCuidador.resources
+C:\Users\NANABE\Documents\GitHub\VitalCare\VitalCare\VitalCare\obj\Debug\VitalCare.TExibirUsuariosADM.resources
+C:\Users\NANABE\Documents\GitHub\VitalCare\VitalCare\VitalCare\obj\Debug\VitalCare.TPacientesCuidador.resources
+C:\Users\NANABE\Documents\GitHub\VitalCare\VitalCare\VitalCare\obj\Debug\VitalCare.UsuarioUC.resources

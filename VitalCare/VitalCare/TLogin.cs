@@ -14,11 +14,12 @@ namespace VitalCare
 {
     public partial class TLogin : Form
     {
-        private Conexao conexao;
+        MySqlConnection Conexao;
         public TLogin()
         {
             InitializeComponent();
-            conexao = new Conexao();
+            campoEmail.Select();
+            campoSenha.PasswordChar = '*';
         }
 
         private GraphicsPath GraphicsPath()
@@ -51,41 +52,81 @@ namespace VitalCare
 
         }
 
-        //TESTE - direciona para a tela principal do cuidador
+
         private void BotaoEntrar_Click(object sender, EventArgs e)
         {
-            string email = campoEmail.Text;
-            string senha = campoSenha.Text;
-
-            MySqlConnection connection = conexao.IniciarConexao();
-
             try
             {
-                string query = "SELECT COUNT(*) FROM dados_login WHERE email = @Email AND senha = @Senha";
-                MySqlCommand command = new MySqlCommand(query, connection);
-                command.Parameters.AddWithValue("@Email", email);
-                command.Parameters.AddWithValue("@Senha", senha);
-
-                int count = Convert.ToInt32(command.ExecuteScalar());
-
-                if (count > 0)
+                if (campoEmail.Text == "" && campoSenha.Text == "")
                 {
-                    MessageBox.Show("Login realizado com Sucesso !!");
-                    this.Hide();
-                    TMenuCuidador x = new TMenuCuidador();
-                    x.Show();
+                    MessageBox.Show("Preencha os campos", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    campoEmail.Select();
+
                 }
                 else
                 {
-                    MessageBox.Show("Email ou senha inválidos.");
+                    string data_source = "datasource=localhost;username=root;password=;database=vitalcare";
+
+                    Conexao = new MySqlConnection(data_source);
+
+
+                    string sql = "select cargo_usuario from cad_usuario where usuario_email = '" + campoEmail.Text + "' and senha_login = '" + campoSenha.Text + "' ";
+
+
+                    MySqlCommand comando = new MySqlCommand(sql, Conexao);
+
+                    Conexao.Open();
+
+                    MySqlDataReader dr = comando.ExecuteReader();
+
+                    if (dr.Read() == true)
+                    {
+
+                        string cargo = dr.GetString(0);
+
+                        string adm = "Administrador", user = "Cuidador";
+
+                        if (cargo.Equals(adm))
+                        {
+                            TMenuAdministrador x = new TMenuAdministrador();
+                            this.Hide();
+                            x.Show();
+
+                        }
+                        else if (cargo.Equals(user))
+                        {
+                            TMenuCuidador n = new TMenuCuidador();
+                            this.Hide();
+                            n.Show();
+
+                        }
+                        else
+                        {
+                            MessageBox.Show("Usuário ou senha invalidos", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            limparCampos();
+                        }
+
+                        Conexao.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Usuário ou senha invalidos", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        limparCampos();
+                    }
+
+                    
                 }
+
+
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro ao Realizaro Login: " + ex.Message);
+                MessageBox.Show(ex.Message);
+                limparCampos();
             }
-        }
+           
 
+        }
         private void PictureBox2_Click(object sender, EventArgs e)
         {
 
@@ -105,8 +146,7 @@ namespace VitalCare
         private void button1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            TMenuAdministrador x = new TMenuAdministrador();
-            x.Show();
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -119,6 +159,13 @@ namespace VitalCare
         {
             TMenuCuidador n = new TMenuCuidador();
             n.Show();
+        }
+
+        private void limparCampos()
+        {
+            campoEmail.Text = "";
+            campoSenha.Text = "";
+            campoEmail.Select();
         }
     }
 }
