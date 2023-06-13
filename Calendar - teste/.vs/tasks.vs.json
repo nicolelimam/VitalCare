@@ -1,0 +1,15 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-Calendar",
+      "appliesTo": "Calendar/Calendar/",
+      "type": "launch"
+    },
+    {
+      "taskLabel": "task-packages",
+      "appliesTo": "Calendar/packages/",
+      "type": "launch"
+    }
+  ]
+}
