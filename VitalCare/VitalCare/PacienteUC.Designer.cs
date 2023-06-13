@@ -30,8 +30,8 @@ namespace VitalCare
         private void InitializeComponent()
         {
             this.BtnProntuário = new System.Windows.Forms.Button();
-            this.ID = new System.Windows.Forms.Label();
-            this.NomePaciente = new System.Windows.Forms.Label();
+            this.campoQuarto = new System.Windows.Forms.Label();
+            this.campoNome = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // BtnProntuário
@@ -49,26 +49,26 @@ namespace VitalCare
             this.BtnProntuário.UseVisualStyleBackColor = false;
             this.BtnProntuário.Click += new System.EventHandler(this.BtnProntuário_Click);
             // 
-            // ID
+            // campoQuarto
             // 
-            this.ID.AutoSize = true;
-            this.ID.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ID.Location = new System.Drawing.Point(26, 71);
-            this.ID.Name = "ID";
-            this.ID.Size = new System.Drawing.Size(144, 20);
-            this.ID.TabIndex = 24;
-            this.ID.Text = "Numero do quarto";
+            this.campoQuarto.AutoSize = true;
+            this.campoQuarto.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.campoQuarto.Location = new System.Drawing.Point(26, 71);
+            this.campoQuarto.Name = "campoQuarto";
+            this.campoQuarto.Size = new System.Drawing.Size(144, 20);
+            this.campoQuarto.TabIndex = 24;
+            this.campoQuarto.Text = "Numero do quarto";
             // 
-            // NomePaciente
+            // campoNome
             // 
-            this.NomePaciente.AutoSize = true;
-            this.NomePaciente.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NomePaciente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(103)))), ((int)(((byte)(84)))));
-            this.NomePaciente.Location = new System.Drawing.Point(26, 38);
-            this.NomePaciente.Name = "NomePaciente";
-            this.NomePaciente.Size = new System.Drawing.Size(184, 22);
-            this.NomePaciente.TabIndex = 23;
-            this.NomePaciente.Text = "Nome do paciente";
+            this.campoNome.AutoSize = true;
+            this.campoNome.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.campoNome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(103)))), ((int)(((byte)(84)))));
+            this.campoNome.Location = new System.Drawing.Point(26, 38);
+            this.campoNome.Name = "campoNome";
+            this.campoNome.Size = new System.Drawing.Size(184, 22);
+            this.campoNome.TabIndex = 23;
+            this.campoNome.Text = "Nome do paciente";
             // 
             // PacienteUC
             // 
@@ -76,10 +76,11 @@ namespace VitalCare
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.BtnProntuário);
-            this.Controls.Add(this.ID);
-            this.Controls.Add(this.NomePaciente);
+            this.Controls.Add(this.campoQuarto);
+            this.Controls.Add(this.campoNome);
             this.Name = "PacienteUC";
             this.Size = new System.Drawing.Size(716, 150);
+            this.Load += new System.EventHandler(this.PacienteUC_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -88,7 +89,7 @@ namespace VitalCare
         #endregion
 
         private System.Windows.Forms.Button BtnProntuário;
-        private System.Windows.Forms.Label ID;
-        private System.Windows.Forms.Label NomePaciente;
+        private System.Windows.Forms.Label campoQuarto;
+        private System.Windows.Forms.Label campoNome;
     }
 }

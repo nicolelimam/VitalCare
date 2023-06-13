@@ -32,11 +32,11 @@ namespace VitalCare
             this.BtnCadastrar = new System.Windows.Forms.Button();
             this.BtnVoltar = new System.Windows.Forms.Button();
             this.BtnBuscar = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.LblPesquisar = new System.Windows.Forms.Label();
             this.TxtBoxPesquisar = new System.Windows.Forms.TextBox();
             this.titulopanel = new System.Windows.Forms.Label();
             this.BtnAtualizar = new System.Windows.Forms.Button();
+            this.tabelaPacientes = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
             // BtnCadastrar
@@ -78,14 +78,6 @@ namespace VitalCare
             this.BtnBuscar.TabIndex = 34;
             this.BtnBuscar.Text = "Buscar";
             this.BtnBuscar.UseVisualStyleBackColor = false;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.panel1.Location = new System.Drawing.Point(112, 93);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(716, 408);
-            this.panel1.TabIndex = 31;
             // 
             // LblPesquisar
             // 
@@ -134,17 +126,25 @@ namespace VitalCare
             this.BtnAtualizar.Text = "Atualizar";
             this.BtnAtualizar.UseVisualStyleBackColor = false;
             // 
+            // tabelaPacientes
+            // 
+            this.tabelaPacientes.Location = new System.Drawing.Point(112, 92);
+            this.tabelaPacientes.Name = "tabelaPacientes";
+            this.tabelaPacientes.Size = new System.Drawing.Size(716, 408);
+            this.tabelaPacientes.TabIndex = 37;
+            this.tabelaPacientes.Paint += new System.Windows.Forms.PaintEventHandler(this.tabelaPacientes_Paint);
+            // 
             // TExibirPacientesADM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::VitalCare.Properties.Resources.Tela_Principal___Cuidador;
             this.ClientSize = new System.Drawing.Size(940, 512);
+            this.Controls.Add(this.tabelaPacientes);
             this.Controls.Add(this.BtnAtualizar);
             this.Controls.Add(this.BtnCadastrar);
             this.Controls.Add(this.BtnVoltar);
             this.Controls.Add(this.BtnBuscar);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.LblPesquisar);
             this.Controls.Add(this.TxtBoxPesquisar);
             this.Controls.Add(this.titulopanel);
@@ -161,10 +161,10 @@ namespace VitalCare
         private System.Windows.Forms.Button BtnCadastrar;
         private System.Windows.Forms.Button BtnVoltar;
         private System.Windows.Forms.Button BtnBuscar;
-        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label LblPesquisar;
         private System.Windows.Forms.TextBox TxtBoxPesquisar;
         private System.Windows.Forms.Label titulopanel;
         private System.Windows.Forms.Button BtnAtualizar;
+        private System.Windows.Forms.FlowLayoutPanel tabelaPacientes;
     }
 }
