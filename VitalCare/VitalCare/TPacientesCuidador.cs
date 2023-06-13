@@ -18,19 +18,11 @@ namespace VitalCare
         {
             conexao = new Conexao();
             InitializeComponent();
-
-            tabelaPacientes.View = View.Details;
-            tabelaPacientes.LabelEdit = true;
-            tabelaPacientes.AllowColumnReorder = true;
-            tabelaPacientes.FullRowSelect = true;
-            tabelaPacientes.GridLines = true;
-            tabelaPacientes.Columns.Add("Nome", 200, HorizontalAlignment.Left);
-            tabelaPacientes.Columns.Add("Quarto", 200, HorizontalAlignment.Left);
+            tabelaPacientes.AllowUserToAddRows = false;
         }
 
         private void BtnBuscar_Click(object sender, EventArgs e)
         {
-
             try
             {
                 string q = campoPesquisa.Text.Trim();
@@ -39,12 +31,10 @@ namespace VitalCare
 
                 if (string.IsNullOrEmpty(q))
                 {
-                    // Consulta para buscar todos os registros
                     query = "SELECT * FROM pacientes";
                 }
                 else
                 {
-                    // Consulta para buscar registros com base no campo de pesquisa
                     q = "'%" + q + "%'";
                     query = "SELECT * FROM pacientes WHERE nome LIKE " + q + " OR quarto LIKE " + q;
                 }
@@ -52,23 +42,31 @@ namespace VitalCare
                 MySqlConnection connection = conexao.IniciarConexao();
                 MySqlCommand command = new MySqlCommand(query, connection);
                 MySqlDataReader reader = command.ExecuteReader();
-                tabelaPacientes.Items.Clear();
+                tabelaPacientes.Rows.Clear();
 
                 while (reader.Read())
                 {
-                    string[] row =
-                    {
-                reader.GetString(0),
-                reader.GetString(1),
-            };
-                    var linha_listview = new ListViewItem(row);
-                    tabelaPacientes.Items.Add(linha_listview);
+                    string nome = reader.GetString(0);
+                    string quarto = reader.GetString(1);
+
+                    tabelaPacientes.Rows.Add(nome, quarto);
+
                 }
             }
-            catch
+            catch (Exception ex)
             {
-                MessageBox.Show("Erro ao inserir dados");
+                MessageBox.Show("Erro ao inserir dados: " + ex.Message);
             }
         }
+
+        private void tabelaPacientes_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == tabelaPacientes.Columns["colunaProntuario"].Index && e.RowIndex >= 0)
+            {
+                TExibirProntuarioCuidador prontuarioForm = new TExibirProntuarioCuidador();
+                prontuarioForm.Show();
+            }
+        }
+
     }
 }
