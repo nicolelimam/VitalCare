@@ -31,8 +31,6 @@ namespace VitalCare
         {
             this.titulopanel = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.NQuarto = new System.Windows.Forms.Label();
-            this.LblNQuarto = new System.Windows.Forms.Label();
             this.ObsPaciente = new System.Windows.Forms.TextBox();
             this.MedicamentosPaciente = new System.Windows.Forms.Label();
             this.Comorbidades = new System.Windows.Forms.Label();
@@ -47,6 +45,8 @@ namespace VitalCare
             this.LblComorbidades = new System.Windows.Forms.Label();
             this.LblIdade = new System.Windows.Forms.Label();
             this.LblNome = new System.Windows.Forms.Label();
+            this.LblNQuarto = new System.Windows.Forms.Label();
+            this.NQuarto = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -86,29 +86,6 @@ namespace VitalCare
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(881, 395);
             this.panel1.TabIndex = 22;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // NQuarto
-            // 
-            this.NQuarto.AutoSize = true;
-            this.NQuarto.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NQuarto.ForeColor = System.Drawing.Color.Black;
-            this.NQuarto.Location = new System.Drawing.Point(585, 84);
-            this.NQuarto.Name = "NQuarto";
-            this.NQuarto.Size = new System.Drawing.Size(28, 21);
-            this.NQuarto.TabIndex = 26;
-            this.NQuarto.Text = "00";
-            // 
-            // LblNQuarto
-            // 
-            this.LblNQuarto.AutoSize = true;
-            this.LblNQuarto.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblNQuarto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(103)))), ((int)(((byte)(84)))));
-            this.LblNQuarto.Location = new System.Drawing.Point(496, 84);
-            this.LblNQuarto.Name = "LblNQuarto";
-            this.LblNQuarto.Size = new System.Drawing.Size(93, 21);
-            this.LblNQuarto.TabIndex = 25;
-            this.LblNQuarto.Text = "Nº Quarto:";
             // 
             // ObsPaciente
             // 
@@ -269,6 +246,28 @@ namespace VitalCare
             this.LblNome.Size = new System.Drawing.Size(61, 21);
             this.LblNome.TabIndex = 0;
             this.LblNome.Text = "Nome:";
+            // 
+            // LblNQuarto
+            // 
+            this.LblNQuarto.AutoSize = true;
+            this.LblNQuarto.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblNQuarto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(103)))), ((int)(((byte)(84)))));
+            this.LblNQuarto.Location = new System.Drawing.Point(496, 84);
+            this.LblNQuarto.Name = "LblNQuarto";
+            this.LblNQuarto.Size = new System.Drawing.Size(93, 21);
+            this.LblNQuarto.TabIndex = 25;
+            this.LblNQuarto.Text = "Nº Quarto:";
+            // 
+            // NQuarto
+            // 
+            this.NQuarto.AutoSize = true;
+            this.NQuarto.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NQuarto.ForeColor = System.Drawing.Color.Black;
+            this.NQuarto.Location = new System.Drawing.Point(585, 84);
+            this.NQuarto.Name = "NQuarto";
+            this.NQuarto.Size = new System.Drawing.Size(28, 21);
+            this.NQuarto.TabIndex = 26;
+            this.NQuarto.Text = "00";
             // 
             // TExibirProntuarioCuidador
             // 

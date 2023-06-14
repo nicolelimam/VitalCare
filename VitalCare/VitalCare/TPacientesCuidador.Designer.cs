@@ -34,11 +34,7 @@ namespace VitalCare
             this.botaoBuscar = new System.Windows.Forms.Button();
             this.LblPesquisar = new System.Windows.Forms.Label();
             this.campoPesquisa = new System.Windows.Forms.TextBox();
-            this.tabelaPacientes = new System.Windows.Forms.DataGridView();
-            this.colunaNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colunaQuarto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colunaProntuario = new System.Windows.Forms.DataGridViewButtonColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.tabelaPacientes)).BeginInit();
+            this.tabelaPacientes = new System.Windows.Forms.ListView();
             this.SuspendLayout();
             // 
             // BtnAtualizar
@@ -104,32 +100,12 @@ namespace VitalCare
             // 
             // tabelaPacientes
             // 
-            this.tabelaPacientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.tabelaPacientes.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.colunaNome,
-            this.colunaQuarto,
-            this.colunaProntuario});
-            this.tabelaPacientes.Location = new System.Drawing.Point(115, 127);
+            this.tabelaPacientes.HideSelection = false;
+            this.tabelaPacientes.Location = new System.Drawing.Point(203, 140);
             this.tabelaPacientes.Name = "tabelaPacientes";
-            this.tabelaPacientes.Size = new System.Drawing.Size(720, 306);
-            this.tabelaPacientes.TabIndex = 45;
-            this.tabelaPacientes.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.tabelaPacientes_CellContentClick);
-            // 
-            // colunaNome
-            // 
-            this.colunaNome.HeaderText = "Nome";
-            this.colunaNome.Name = "colunaNome";
-            // 
-            // colunaQuarto
-            // 
-            this.colunaQuarto.HeaderText = "Quarto";
-            this.colunaQuarto.Name = "colunaQuarto";
-            // 
-            // colunaProntuario
-            // 
-            this.colunaProntuario.HeaderText = "Prontuário";
-            this.colunaProntuario.Name = "colunaProntuario";
-            this.colunaProntuario.Text = "";
+            this.tabelaPacientes.Size = new System.Drawing.Size(542, 297);
+            this.tabelaPacientes.TabIndex = 44;
+            this.tabelaPacientes.UseCompatibleStateImageBehavior = false;
             // 
             // TPacientesCuidador
             // 
@@ -146,7 +122,6 @@ namespace VitalCare
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "TPacientesCuidador";
             this.Text = "TProntuariosCuidador";
-            ((System.ComponentModel.ISupportInitialize)(this.tabelaPacientes)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -159,9 +134,6 @@ namespace VitalCare
         private System.Windows.Forms.Button botaoBuscar;
         private System.Windows.Forms.Label LblPesquisar;
         private System.Windows.Forms.TextBox campoPesquisa;
-        private System.Windows.Forms.DataGridView tabelaPacientes;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colunaNome;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colunaQuarto;
-        private System.Windows.Forms.DataGridViewButtonColumn colunaProntuario;
+        private System.Windows.Forms.ListView tabelaPacientes;
     }
 }
