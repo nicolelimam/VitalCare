@@ -30,11 +30,8 @@ namespace VitalCare
         private void InitializeComponent()
         {
             this.BtnAtualizar = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.titulopanel = new System.Windows.Forms.Label();
-            this.botaoBuscar = new System.Windows.Forms.Button();
-            this.LblPesquisar = new System.Windows.Forms.Label();
-            this.campoPesquisa = new System.Windows.Forms.TextBox();
-            this.tabelaPacientes = new System.Windows.Forms.ListView();
             this.SuspendLayout();
             // 
             // BtnAtualizar
@@ -51,6 +48,14 @@ namespace VitalCare
             this.BtnAtualizar.Text = "Atualizar";
             this.BtnAtualizar.UseVisualStyleBackColor = false;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.panel1.Location = new System.Drawing.Point(123, 59);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(716, 408);
+            this.panel1.TabIndex = 38;
+            // 
             // titulopanel
             // 
             this.titulopanel.AutoSize = true;
@@ -63,61 +68,14 @@ namespace VitalCare
             this.titulopanel.TabIndex = 37;
             this.titulopanel.Text = "MEUS PACIENTES";
             // 
-            // botaoBuscar
-            // 
-            this.botaoBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(180)))), ((int)(((byte)(158)))));
-            this.botaoBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.botaoBuscar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.botaoBuscar.ForeColor = System.Drawing.Color.White;
-            this.botaoBuscar.Location = new System.Drawing.Point(603, 95);
-            this.botaoBuscar.Name = "botaoBuscar";
-            this.botaoBuscar.Size = new System.Drawing.Size(98, 26);
-            this.botaoBuscar.TabIndex = 43;
-            this.botaoBuscar.Text = "Buscar";
-            this.botaoBuscar.UseVisualStyleBackColor = false;
-            this.botaoBuscar.Click += new System.EventHandler(this.BtnBuscar_Click);
-            // 
-            // LblPesquisar
-            // 
-            this.LblPesquisar.AutoSize = true;
-            this.LblPesquisar.BackColor = System.Drawing.Color.Transparent;
-            this.LblPesquisar.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblPesquisar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(103)))), ((int)(((byte)(84)))));
-            this.LblPesquisar.Location = new System.Drawing.Point(249, 96);
-            this.LblPesquisar.Name = "LblPesquisar";
-            this.LblPesquisar.Size = new System.Drawing.Size(99, 22);
-            this.LblPesquisar.TabIndex = 41;
-            this.LblPesquisar.Text = "Pesquisar:";
-            // 
-            // campoPesquisa
-            // 
-            this.campoPesquisa.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.campoPesquisa.Location = new System.Drawing.Point(348, 97);
-            this.campoPesquisa.Multiline = true;
-            this.campoPesquisa.Name = "campoPesquisa";
-            this.campoPesquisa.Size = new System.Drawing.Size(249, 21);
-            this.campoPesquisa.TabIndex = 42;
-            // 
-            // tabelaPacientes
-            // 
-            this.tabelaPacientes.HideSelection = false;
-            this.tabelaPacientes.Location = new System.Drawing.Point(203, 140);
-            this.tabelaPacientes.Name = "tabelaPacientes";
-            this.tabelaPacientes.Size = new System.Drawing.Size(542, 297);
-            this.tabelaPacientes.TabIndex = 44;
-            this.tabelaPacientes.UseCompatibleStateImageBehavior = false;
-            // 
             // TPacientesCuidador
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::VitalCare.Properties.Resources.Tela_Principal___Cuidador;
             this.ClientSize = new System.Drawing.Size(940, 512);
-            this.Controls.Add(this.tabelaPacientes);
-            this.Controls.Add(this.botaoBuscar);
-            this.Controls.Add(this.LblPesquisar);
-            this.Controls.Add(this.campoPesquisa);
             this.Controls.Add(this.BtnAtualizar);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.titulopanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "TPacientesCuidador";
@@ -130,10 +88,7 @@ namespace VitalCare
         #endregion
 
         private System.Windows.Forms.Button BtnAtualizar;
+        private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label titulopanel;
-        private System.Windows.Forms.Button botaoBuscar;
-        private System.Windows.Forms.Label LblPesquisar;
-        private System.Windows.Forms.TextBox campoPesquisa;
-        private System.Windows.Forms.ListView tabelaPacientes;
     }
 }
