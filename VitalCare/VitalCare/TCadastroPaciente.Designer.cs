@@ -30,9 +30,9 @@ namespace VitalCare
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.TxtBoxCpf = new System.Windows.Forms.TextBox();
+            this.CampoCPF = new System.Windows.Forms.TextBox();
             this.LblCpf = new System.Windows.Forms.Label();
-            this.TxtBoxRg = new System.Windows.Forms.TextBox();
+            this.CampoRG = new System.Windows.Forms.TextBox();
             this.LblRg = new System.Windows.Forms.Label();
             this.campoNome = new System.Windows.Forms.TextBox();
             this.campoQuarto = new System.Windows.Forms.ComboBox();
@@ -53,9 +53,9 @@ namespace VitalCare
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(251)))), ((int)(((byte)(240)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.TxtBoxCpf);
+            this.panel1.Controls.Add(this.CampoCPF);
             this.panel1.Controls.Add(this.LblCpf);
-            this.panel1.Controls.Add(this.TxtBoxRg);
+            this.panel1.Controls.Add(this.CampoRG);
             this.panel1.Controls.Add(this.LblRg);
             this.panel1.Controls.Add(this.campoNome);
             this.panel1.Controls.Add(this.campoQuarto);
@@ -68,46 +68,51 @@ namespace VitalCare
             this.panel1.Controls.Add(this.LblNomeResponsavel);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.LblNome);
-            this.panel1.Location = new System.Drawing.Point(128, 109);
+            this.panel1.Location = new System.Drawing.Point(171, 134);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(679, 293);
+            this.panel1.Size = new System.Drawing.Size(905, 360);
             this.panel1.TabIndex = 1;
             // 
-            // TxtBoxCpf
+            // CampoCPF
             // 
-            this.TxtBoxCpf.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBoxCpf.Location = new System.Drawing.Point(410, 101);
-            this.TxtBoxCpf.Multiline = true;
-            this.TxtBoxCpf.Name = "TxtBoxCpf";
-            this.TxtBoxCpf.Size = new System.Drawing.Size(233, 21);
-            this.TxtBoxCpf.TabIndex = 24;
+            this.CampoCPF.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CampoCPF.Location = new System.Drawing.Point(547, 124);
+            this.CampoCPF.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CampoCPF.Multiline = true;
+            this.CampoCPF.Name = "CampoCPF";
+            this.CampoCPF.Size = new System.Drawing.Size(309, 25);
+            this.CampoCPF.TabIndex = 24;
             // 
             // LblCpf
             // 
             this.LblCpf.AutoSize = true;
             this.LblCpf.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblCpf.Location = new System.Drawing.Point(360, 100);
+            this.LblCpf.Location = new System.Drawing.Point(480, 123);
+            this.LblCpf.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblCpf.Name = "LblCpf";
-            this.LblCpf.Size = new System.Drawing.Size(44, 21);
+            this.LblCpf.Size = new System.Drawing.Size(53, 23);
             this.LblCpf.TabIndex = 23;
             this.LblCpf.Text = "CPF:";
             // 
-            // TxtBoxRg
+            // CampoRG
             // 
-            this.TxtBoxRg.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBoxRg.Location = new System.Drawing.Point(113, 100);
-            this.TxtBoxRg.Multiline = true;
-            this.TxtBoxRg.Name = "TxtBoxRg";
-            this.TxtBoxRg.Size = new System.Drawing.Size(233, 21);
-            this.TxtBoxRg.TabIndex = 22;
+            this.CampoRG.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CampoRG.Location = new System.Drawing.Point(151, 123);
+            this.CampoRG.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CampoRG.Multiline = true;
+            this.CampoRG.Name = "CampoRG";
+            this.CampoRG.Size = new System.Drawing.Size(309, 25);
+            this.CampoRG.TabIndex = 22;
             // 
             // LblRg
             // 
             this.LblRg.AutoSize = true;
             this.LblRg.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblRg.Location = new System.Drawing.Point(69, 99);
+            this.LblRg.Location = new System.Drawing.Point(92, 122);
+            this.LblRg.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblRg.Name = "LblRg";
-            this.LblRg.Size = new System.Drawing.Size(38, 21);
+            this.LblRg.Size = new System.Drawing.Size(44, 23);
             this.LblRg.TabIndex = 21;
             this.LblRg.Text = "RG:";
             this.LblRg.Click += new System.EventHandler(this.label2_Click);
@@ -115,37 +120,41 @@ namespace VitalCare
             // campoNome
             // 
             this.campoNome.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.campoNome.Location = new System.Drawing.Point(136, 61);
+            this.campoNome.Location = new System.Drawing.Point(181, 75);
+            this.campoNome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.campoNome.Multiline = true;
             this.campoNome.Name = "campoNome";
-            this.campoNome.Size = new System.Drawing.Size(215, 21);
+            this.campoNome.Size = new System.Drawing.Size(285, 25);
             this.campoNome.TabIndex = 20;
             // 
             // campoQuarto
             // 
             this.campoQuarto.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.campoQuarto.FormattingEnabled = true;
-            this.campoQuarto.Location = new System.Drawing.Point(574, 181);
+            this.campoQuarto.Location = new System.Drawing.Point(765, 223);
+            this.campoQuarto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.campoQuarto.Name = "campoQuarto";
-            this.campoQuarto.Size = new System.Drawing.Size(69, 25);
+            this.campoQuarto.Size = new System.Drawing.Size(91, 29);
             this.campoQuarto.TabIndex = 19;
             // 
             // campoTelefone
             // 
             this.campoTelefone.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.campoTelefone.Location = new System.Drawing.Point(266, 180);
+            this.campoTelefone.Location = new System.Drawing.Point(355, 222);
+            this.campoTelefone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.campoTelefone.Multiline = true;
             this.campoTelefone.Name = "campoTelefone";
-            this.campoTelefone.Size = new System.Drawing.Size(168, 21);
+            this.campoTelefone.Size = new System.Drawing.Size(223, 25);
             this.campoTelefone.TabIndex = 18;
             // 
             // campoResponsavel
             // 
             this.campoResponsavel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.campoResponsavel.Location = new System.Drawing.Point(257, 141);
+            this.campoResponsavel.Location = new System.Drawing.Point(343, 174);
+            this.campoResponsavel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.campoResponsavel.Multiline = true;
             this.campoResponsavel.Name = "campoResponsavel";
-            this.campoResponsavel.Size = new System.Drawing.Size(386, 21);
+            this.campoResponsavel.Size = new System.Drawing.Size(513, 25);
             this.campoResponsavel.TabIndex = 17;
             // 
             // BtnSalvar
@@ -155,9 +164,10 @@ namespace VitalCare
             this.BtnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnSalvar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnSalvar.ForeColor = System.Drawing.Color.White;
-            this.BtnSalvar.Location = new System.Drawing.Point(544, 236);
+            this.BtnSalvar.Location = new System.Drawing.Point(725, 290);
+            this.BtnSalvar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnSalvar.Name = "BtnSalvar";
-            this.BtnSalvar.Size = new System.Drawing.Size(99, 27);
+            this.BtnSalvar.Size = new System.Drawing.Size(132, 33);
             this.BtnSalvar.TabIndex = 16;
             this.BtnSalvar.Text = "Salvar";
             this.BtnSalvar.UseVisualStyleBackColor = false;
@@ -166,19 +176,21 @@ namespace VitalCare
             // campoNasc
             // 
             this.campoNasc.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.campoNasc.Location = new System.Drawing.Point(474, 61);
+            this.campoNasc.Location = new System.Drawing.Point(632, 75);
+            this.campoNasc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.campoNasc.Multiline = true;
             this.campoNasc.Name = "campoNasc";
-            this.campoNasc.Size = new System.Drawing.Size(169, 21);
+            this.campoNasc.Size = new System.Drawing.Size(224, 25);
             this.campoNasc.TabIndex = 6;
             // 
             // LblNQuarto
             // 
             this.LblNQuarto.AutoSize = true;
             this.LblNQuarto.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblNQuarto.Location = new System.Drawing.Point(450, 180);
+            this.LblNQuarto.Location = new System.Drawing.Point(600, 222);
+            this.LblNQuarto.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblNQuarto.Name = "LblNQuarto";
-            this.LblNQuarto.Size = new System.Drawing.Size(118, 21);
+            this.LblNQuarto.Size = new System.Drawing.Size(145, 23);
             this.LblNQuarto.TabIndex = 4;
             this.LblNQuarto.Text = "Nº do Quarto:";
             // 
@@ -186,9 +198,10 @@ namespace VitalCare
             // 
             this.LblTelResponsavel.AutoSize = true;
             this.LblTelResponsavel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblTelResponsavel.Location = new System.Drawing.Point(69, 179);
+            this.LblTelResponsavel.Location = new System.Drawing.Point(92, 220);
+            this.LblTelResponsavel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblTelResponsavel.Name = "LblTelResponsavel";
-            this.LblTelResponsavel.Size = new System.Drawing.Size(191, 21);
+            this.LblTelResponsavel.Size = new System.Drawing.Size(244, 23);
             this.LblTelResponsavel.TabIndex = 3;
             this.LblTelResponsavel.Text = "Telefone do resposável:";
             // 
@@ -196,9 +209,10 @@ namespace VitalCare
             // 
             this.LblNomeResponsavel.AutoSize = true;
             this.LblNomeResponsavel.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblNomeResponsavel.Location = new System.Drawing.Point(69, 140);
+            this.LblNomeResponsavel.Location = new System.Drawing.Point(92, 172);
+            this.LblNomeResponsavel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblNomeResponsavel.Name = "LblNomeResponsavel";
-            this.LblNomeResponsavel.Size = new System.Drawing.Size(182, 21);
+            this.LblNomeResponsavel.Size = new System.Drawing.Size(233, 23);
             this.LblNomeResponsavel.TabIndex = 2;
             this.LblNomeResponsavel.Text = "Nome do responsável:";
             // 
@@ -206,9 +220,10 @@ namespace VitalCare
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(360, 61);
+            this.label1.Location = new System.Drawing.Point(480, 75);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 21);
+            this.label1.Size = new System.Drawing.Size(132, 23);
             this.label1.TabIndex = 1;
             this.label1.Text = "Nascimento:";
             this.label1.Click += new System.EventHandler(this.LblIdade_Click);
@@ -217,9 +232,10 @@ namespace VitalCare
             // 
             this.LblNome.AutoSize = true;
             this.LblNome.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblNome.Location = new System.Drawing.Point(69, 61);
+            this.LblNome.Location = new System.Drawing.Point(92, 75);
+            this.LblNome.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblNome.Name = "LblNome";
-            this.LblNome.Size = new System.Drawing.Size(61, 21);
+            this.LblNome.Size = new System.Drawing.Size(75, 23);
             this.LblNome.TabIndex = 0;
             this.LblNome.Text = "Nome:";
             // 
@@ -228,22 +244,24 @@ namespace VitalCare
             this.titulopanel.AutoSize = true;
             this.titulopanel.BackColor = System.Drawing.Color.Transparent;
             this.titulopanel.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.titulopanel.Location = new System.Drawing.Point(283, 38);
+            this.titulopanel.Location = new System.Drawing.Point(377, 47);
+            this.titulopanel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.titulopanel.Name = "titulopanel";
-            this.titulopanel.Size = new System.Drawing.Size(358, 30);
+            this.titulopanel.Size = new System.Drawing.Size(439, 37);
             this.titulopanel.TabIndex = 19;
             this.titulopanel.Text = "CADASTRAR NOVO PACIENTE";
             // 
             // TCadastroPaciente
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::VitalCare.Properties.Resources.Tela_Principal___Cuidador;
-            this.ClientSize = new System.Drawing.Size(940, 512);
+            this.ClientSize = new System.Drawing.Size(1253, 630);
             this.Controls.Add(this.titulopanel);
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(103)))), ((int)(((byte)(84)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "TCadastroPaciente";
@@ -272,8 +290,8 @@ namespace VitalCare
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label titulopanel;
         private System.Windows.Forms.Label LblRg;
-        private System.Windows.Forms.TextBox TxtBoxCpf;
+        private System.Windows.Forms.TextBox CampoCPF;
         private System.Windows.Forms.Label LblCpf;
-        private System.Windows.Forms.TextBox TxtBoxRg;
+        private System.Windows.Forms.TextBox CampoRG;
     }
 }

@@ -15,6 +15,8 @@ namespace VitalCare
     public partial class TLogin : Form
     {
         private Conexao conexao;
+        private string nome;
+
         public TLogin()
         {
             InitializeComponent();
@@ -51,7 +53,6 @@ namespace VitalCare
 
         }
 
-        //TESTE - direciona para a tela principal do cuidador
         private void BotaoEntrar_Click(object sender, EventArgs e)
         {
             string email = campoEmail.Text;
@@ -61,19 +62,34 @@ namespace VitalCare
 
             try
             {
-                string query = "SELECT COUNT(*) FROM dados_login WHERE email = @Email AND senha = @Senha";
+                string query = "SELECT COUNT(*) FROM cad_usuario WHERE usuario_email = @usuario_email AND senha_login = @senha_login";
                 MySqlCommand command = new MySqlCommand(query, connection);
-                command.Parameters.AddWithValue("@Email", email);
-                command.Parameters.AddWithValue("@Senha", senha);
+                command.Parameters.AddWithValue("@usuario_email", email);
+                command.Parameters.AddWithValue("@senha_login", senha);
 
                 int count = Convert.ToInt32(command.ExecuteScalar());
 
                 if (count > 0)
                 {
-                    MessageBox.Show("Login realizado com Sucesso !!");
-                    this.Hide();
-                    TMenuCuidador x = new TMenuCuidador();
-                    x.Show();
+                    query = "SELECT nome FROM cad_usuario WHERE usuario_email = @usuario_email";
+                    command = new MySqlCommand(query, connection);
+                    command.Parameters.AddWithValue("@usuario_email", email);
+
+                    object result = command.ExecuteScalar();
+
+                    if (result != null)
+                    {
+                        nome = result.ToString();
+
+                        MessageBox.Show("Login realizado com Sucesso !!");
+                        this.Hide();
+                        TMenuCuidador x = new TMenuCuidador(nome);
+                        x.Show();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Nome não encontrado.");
+                    }
                 }
                 else
                 {
@@ -82,7 +98,7 @@ namespace VitalCare
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Erro ao Realizaro Login: " + ex.Message);
+                MessageBox.Show("Erro ao Realizar o Login: " + ex.Message);
             }
         }
 
@@ -98,7 +114,7 @@ namespace VitalCare
 
         private void TLogin_Load(object sender, EventArgs e)
         {
-            //impede que o usuário expanda a janela
+            // Impede que o usuário expanda a janela
             this.MaximumSize = this.Size;
         }
 
@@ -117,8 +133,7 @@ namespace VitalCare
 
         private void button3_Click(object sender, EventArgs e)
         {
-            TMenuCuidador n = new TMenuCuidador();
-            n.Show();
+
         }
     }
 }

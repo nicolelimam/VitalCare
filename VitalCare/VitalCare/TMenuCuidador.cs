@@ -12,12 +12,13 @@ namespace VitalCare
 {
     public partial class TMenuCuidador : Form
     {
+        private string nome;
 
-
-        public TMenuCuidador()
+        public TMenuCuidador(string nome)
         {
             InitializeComponent();
             abrirForms(new TInicial());
+            this.nome = nome;
         }
 
 
@@ -104,7 +105,7 @@ namespace VitalCare
 
         private void button3_Click(object sender, EventArgs e)
         {
-            abrirForms(new TPacientesCuidador());
+            abrirForms(new TPacientesCuidador(nome));
         }
     }
 }

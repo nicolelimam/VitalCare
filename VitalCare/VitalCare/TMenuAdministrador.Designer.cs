@@ -50,9 +50,10 @@ namespace VitalCare
             this.panelprincipal.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.panelprincipal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.panelprincipal.BackgroundImage = global::VitalCare.Properties.Resources.Tela_Principal___Cuidador;
-            this.panelprincipal.Location = new System.Drawing.Point(1, 46);
+            this.panelprincipal.Location = new System.Drawing.Point(1, 57);
+            this.panelprincipal.Margin = new System.Windows.Forms.Padding(4);
             this.panelprincipal.Name = "panelprincipal";
-            this.panelprincipal.Size = new System.Drawing.Size(940, 512);
+            this.panelprincipal.Size = new System.Drawing.Size(1253, 630);
             this.panelprincipal.TabIndex = 4;
             // 
             // panel4
@@ -66,10 +67,11 @@ namespace VitalCare
             this.panel4.Controls.Add(this.BtnProntuario);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel4.Location = new System.Drawing.Point(0, 0);
-            this.panel4.MaximumSize = new System.Drawing.Size(1920, 45);
-            this.panel4.MinimumSize = new System.Drawing.Size(948, 45);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4);
+            this.panel4.MaximumSize = new System.Drawing.Size(2560, 55);
+            this.panel4.MinimumSize = new System.Drawing.Size(1264, 55);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(948, 45);
+            this.panel4.Size = new System.Drawing.Size(1264, 55);
             this.panel4.TabIndex = 5;
             // 
             // BtnUsuarios
@@ -79,9 +81,10 @@ namespace VitalCare
             this.BtnUsuarios.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnUsuarios.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnUsuarios.ForeColor = System.Drawing.Color.White;
-            this.BtnUsuarios.Location = new System.Drawing.Point(249, 1);
+            this.BtnUsuarios.Location = new System.Drawing.Point(332, 1);
+            this.BtnUsuarios.Margin = new System.Windows.Forms.Padding(4);
             this.BtnUsuarios.Name = "BtnUsuarios";
-            this.BtnUsuarios.Size = new System.Drawing.Size(136, 42);
+            this.BtnUsuarios.Size = new System.Drawing.Size(181, 52);
             this.BtnUsuarios.TabIndex = 6;
             this.BtnUsuarios.Text = "USUÁRIOS";
             this.BtnUsuarios.UseVisualStyleBackColor = false;
@@ -94,9 +97,10 @@ namespace VitalCare
             this.BtnSair.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnSair.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnSair.ForeColor = System.Drawing.Color.White;
-            this.BtnSair.Location = new System.Drawing.Point(809, 1);
+            this.BtnSair.Location = new System.Drawing.Point(1079, 1);
+            this.BtnSair.Margin = new System.Windows.Forms.Padding(4);
             this.BtnSair.Name = "BtnSair";
-            this.BtnSair.Size = new System.Drawing.Size(136, 42);
+            this.BtnSair.Size = new System.Drawing.Size(181, 52);
             this.BtnSair.TabIndex = 5;
             this.BtnSair.Text = "SAIR";
             this.BtnSair.UseVisualStyleBackColor = false;
@@ -105,9 +109,10 @@ namespace VitalCare
             // logo
             // 
             this.logo.Image = global::VitalCare.Properties.Resources.Rectangle_11;
-            this.logo.Location = new System.Drawing.Point(19, 0);
+            this.logo.Location = new System.Drawing.Point(25, 0);
+            this.logo.Margin = new System.Windows.Forms.Padding(4);
             this.logo.Name = "logo";
-            this.logo.Size = new System.Drawing.Size(169, 42);
+            this.logo.Size = new System.Drawing.Size(225, 52);
             this.logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.logo.TabIndex = 1;
             this.logo.TabStop = false;
@@ -119,9 +124,10 @@ namespace VitalCare
             this.BtnCalendario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCalendario.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCalendario.ForeColor = System.Drawing.Color.White;
-            this.BtnCalendario.Location = new System.Drawing.Point(675, 1);
+            this.BtnCalendario.Location = new System.Drawing.Point(900, 1);
+            this.BtnCalendario.Margin = new System.Windows.Forms.Padding(4);
             this.BtnCalendario.Name = "BtnCalendario";
-            this.BtnCalendario.Size = new System.Drawing.Size(136, 42);
+            this.BtnCalendario.Size = new System.Drawing.Size(181, 52);
             this.BtnCalendario.TabIndex = 4;
             this.BtnCalendario.Text = "CALENDÁRIO";
             this.BtnCalendario.UseVisualStyleBackColor = false;
@@ -134,9 +140,10 @@ namespace VitalCare
             this.BtnPacientes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnPacientes.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnPacientes.ForeColor = System.Drawing.Color.White;
-            this.BtnPacientes.Location = new System.Drawing.Point(391, 1);
+            this.BtnPacientes.Location = new System.Drawing.Point(521, 1);
+            this.BtnPacientes.Margin = new System.Windows.Forms.Padding(4);
             this.BtnPacientes.Name = "BtnPacientes";
-            this.BtnPacientes.Size = new System.Drawing.Size(136, 42);
+            this.BtnPacientes.Size = new System.Drawing.Size(181, 52);
             this.BtnPacientes.TabIndex = 2;
             this.BtnPacientes.Text = "PACIENTES";
             this.BtnPacientes.UseVisualStyleBackColor = false;
@@ -149,9 +156,10 @@ namespace VitalCare
             this.BtnProntuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnProntuario.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnProntuario.ForeColor = System.Drawing.Color.White;
-            this.BtnProntuario.Location = new System.Drawing.Point(533, 1);
+            this.BtnProntuario.Location = new System.Drawing.Point(711, 1);
+            this.BtnProntuario.Margin = new System.Windows.Forms.Padding(4);
             this.BtnProntuario.Name = "BtnProntuario";
-            this.BtnProntuario.Size = new System.Drawing.Size(136, 42);
+            this.BtnProntuario.Size = new System.Drawing.Size(181, 52);
             this.BtnProntuario.TabIndex = 3;
             this.BtnProntuario.Text = "PRONTUÁRIO";
             this.BtnProntuario.UseVisualStyleBackColor = false;
@@ -159,12 +167,13 @@ namespace VitalCare
             // 
             // TMenuAdministrador
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::VitalCare.Properties.Resources.Tela_Principal___Cuidador;
-            this.ClientSize = new System.Drawing.Size(944, 561);
+            this.ClientSize = new System.Drawing.Size(1259, 690);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panelprincipal);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.Name = "TMenuAdministrador";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

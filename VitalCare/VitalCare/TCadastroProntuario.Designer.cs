@@ -30,7 +30,9 @@ namespace VitalCare
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.TxtBoxMedico = new System.Windows.Forms.TextBox();
+            this.campoQuarto = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.CampoMedico = new System.Windows.Forms.TextBox();
             this.LblMedico = new System.Windows.Forms.Label();
             this.BtnSalvar = new System.Windows.Forms.Button();
             this.campoMedicamentos = new System.Windows.Forms.ComboBox();
@@ -45,6 +47,8 @@ namespace VitalCare
             this.LblNome = new System.Windows.Forms.Label();
             this.BtnVoltar = new System.Windows.Forms.Button();
             this.titulopanel = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -52,7 +56,11 @@ namespace VitalCare
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(251)))), ((int)(((byte)(240)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.TxtBoxMedico);
+            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.campoQuarto);
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.CampoMedico);
             this.panel1.Controls.Add(this.LblMedico);
             this.panel1.Controls.Add(this.BtnSalvar);
             this.panel1.Controls.Add(this.campoMedicamentos);
@@ -67,18 +75,40 @@ namespace VitalCare
             this.panel1.Controls.Add(this.LblNome);
             this.panel1.Location = new System.Drawing.Point(181, 67);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(553, 395);
+            this.panel1.Size = new System.Drawing.Size(553, 408);
             this.panel1.TabIndex = 0;
             // 
-            // TxtBoxMedico
+            // campoQuarto
             // 
-            this.TxtBoxMedico.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TxtBoxMedico.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBoxMedico.Location = new System.Drawing.Point(116, 89);
-            this.TxtBoxMedico.Multiline = true;
-            this.TxtBoxMedico.Name = "TxtBoxMedico";
-            this.TxtBoxMedico.Size = new System.Drawing.Size(380, 21);
-            this.TxtBoxMedico.TabIndex = 18;
+            this.campoQuarto.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.campoQuarto.Location = new System.Drawing.Point(399, 89);
+            this.campoQuarto.Multiline = true;
+            this.campoQuarto.Name = "campoQuarto";
+            this.campoQuarto.Size = new System.Drawing.Size(97, 21);
+            this.campoQuarto.TabIndex = 20;
+            this.campoQuarto.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(103)))), ((int)(((byte)(84)))));
+            this.label1.Location = new System.Drawing.Point(331, 89);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(71, 21);
+            this.label1.TabIndex = 19;
+            this.label1.Text = "Quarto:";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // CampoMedico
+            // 
+            this.CampoMedico.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.CampoMedico.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CampoMedico.Location = new System.Drawing.Point(116, 89);
+            this.CampoMedico.Multiline = true;
+            this.CampoMedico.Name = "CampoMedico";
+            this.CampoMedico.Size = new System.Drawing.Size(189, 21);
+            this.CampoMedico.TabIndex = 18;
             // 
             // LblMedico
             // 
@@ -98,7 +128,7 @@ namespace VitalCare
             this.BtnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnSalvar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnSalvar.ForeColor = System.Drawing.Color.White;
-            this.BtnSalvar.Location = new System.Drawing.Point(431, 349);
+            this.BtnSalvar.Location = new System.Drawing.Point(434, 365);
             this.BtnSalvar.Name = "BtnSalvar";
             this.BtnSalvar.Size = new System.Drawing.Size(99, 27);
             this.BtnSalvar.TabIndex = 16;
@@ -126,12 +156,13 @@ namespace VitalCare
             this.campoComorbidades.Name = "campoComorbidades";
             this.campoComorbidades.Size = new System.Drawing.Size(323, 25);
             this.campoComorbidades.TabIndex = 14;
+            this.campoComorbidades.SelectedIndexChanged += new System.EventHandler(this.campoComorbidades_SelectedIndexChanged);
             // 
             // campoObservacao
             // 
             this.campoObservacao.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.campoObservacao.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.campoObservacao.Location = new System.Drawing.Point(173, 230);
+            this.campoObservacao.Location = new System.Drawing.Point(173, 270);
             this.campoObservacao.Multiline = true;
             this.campoObservacao.Name = "campoObservacao";
             this.campoObservacao.Size = new System.Drawing.Size(323, 89);
@@ -154,13 +185,14 @@ namespace VitalCare
             this.campoNome.Name = "campoNome";
             this.campoNome.Size = new System.Drawing.Size(201, 25);
             this.campoNome.TabIndex = 5;
+            this.campoNome.SelectedIndexChanged += new System.EventHandler(this.campoNome_SelectedIndexChanged);
             // 
             // LblObservacoes
             // 
             this.LblObservacoes.AutoSize = true;
             this.LblObservacoes.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblObservacoes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(103)))), ((int)(((byte)(84)))));
-            this.LblObservacoes.Location = new System.Drawing.Point(37, 227);
+            this.LblObservacoes.Location = new System.Drawing.Point(37, 267);
             this.LblObservacoes.Name = "LblObservacoes";
             this.LblObservacoes.Size = new System.Drawing.Size(117, 21);
             this.LblObservacoes.TabIndex = 4;
@@ -171,7 +203,7 @@ namespace VitalCare
             this.LblMedicamentos.AutoSize = true;
             this.LblMedicamentos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblMedicamentos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(103)))), ((int)(((byte)(84)))));
-            this.LblMedicamentos.Location = new System.Drawing.Point(37, 179);
+            this.LblMedicamentos.Location = new System.Drawing.Point(37, 182);
             this.LblMedicamentos.Name = "LblMedicamentos";
             this.LblMedicamentos.Size = new System.Drawing.Size(132, 21);
             this.LblMedicamentos.TabIndex = 3;
@@ -236,6 +268,26 @@ namespace VitalCare
             this.titulopanel.TabIndex = 20;
             this.titulopanel.Text = "CADASTRAR NOVO PRONTUÁRIO";
             // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(173, 223);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(323, 25);
+            this.comboBox1.TabIndex = 22;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(103)))), ((int)(((byte)(84)))));
+            this.label2.Location = new System.Drawing.Point(37, 227);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(133, 21);
+            this.label2.TabIndex = 21;
+            this.label2.Text = "Email Cuidador:";
+            // 
             // TCadastroProntuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -271,7 +323,11 @@ namespace VitalCare
         private System.Windows.Forms.Label LblNome;
         private System.Windows.Forms.Button BtnVoltar;
         private System.Windows.Forms.Label titulopanel;
-        private System.Windows.Forms.TextBox TxtBoxMedico;
+        private System.Windows.Forms.TextBox CampoMedico;
         private System.Windows.Forms.Label LblMedico;
+        private System.Windows.Forms.TextBox campoQuarto;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label2;
     }
 }

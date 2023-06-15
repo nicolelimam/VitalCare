@@ -19,7 +19,7 @@ namespace VitalCare
         public Conexao()
         {
             server = "localhost";
-            database = "banco_teste";
+            database = "vitalcare";
             id = "root";
             password = "";
         }

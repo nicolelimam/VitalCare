@@ -26,31 +26,33 @@ namespace VitalCare
 
         private void BtnSalvar_Click(object sender, EventArgs e)
         {
-            string nome = campoNome.Text;
-            string nascimento = campoNasc.Text;
-            string responsavel = campoResponsavel.Text;
-            string telefone = campoTelefone.Text;
+            string nome=campoNome.Text;
+            string nasci = campoNasc.Text;
+            string rg = CampoRG.Text;
+            string cpf = CampoCPF.Text;
+            string nomeResp = campoResponsavel.Text;
+            string tele = campoTelefone.Text;
             string quarto = campoQuarto.Text;
+       
 
             MySqlConnection connection = conexao.IniciarConexao();
+            string query = "INSERT INTO cad_idoso (id_idoso, nome_idoso, data_nascimento_idoso, rg_idoso, cpf_idoso, nome_responsavel, telefone_responsavel, n_quarto) VALUES (@id, @nome, @nasci, @rg, @cpf, @nomeRespon, @telefone, @quarto)";
+            
+            
+            MySqlCommand cmd = new MySqlCommand(query, connection);
 
-            try
-            {
-                string query = "INSERT INTO pacientes (nome, nascimento, responsavel, telefone, quarto) VALUES (@Nome, @Nascimento, @Responsavel, @Telefone, @Quarto)";
-                MySqlCommand command = new MySqlCommand(query, connection);
-                command.Parameters.AddWithValue("@Nome", nome);
-                command.Parameters.AddWithValue("@Nascimento", nascimento);
-                command.Parameters.AddWithValue("@Responsavel", responsavel);
-                command.Parameters.AddWithValue("@Telefone", telefone);
-                command.Parameters.AddWithValue("@Quarto", quarto);
-                command.ExecuteNonQuery();
+                cmd.Parameters.AddWithValue("@id", null);
+                cmd.Parameters.AddWithValue("@nome", nome);
+                cmd.Parameters.AddWithValue("@nasci", nasci);
+                cmd.Parameters.AddWithValue("@rg", rg);
+                cmd.Parameters.AddWithValue("@cpf", cpf);
+                cmd.Parameters.AddWithValue("@nomeRespon", nomeResp);
+                cmd.Parameters.AddWithValue("@telefone", tele);
+                cmd.Parameters.AddWithValue("@quarto", quarto);
+                
+                cmd.ExecuteNonQuery();
                 MessageBox.Show("Dados Salvos com Sucesso!");
 
-            }
-            catch
-            {
-                MessageBox.Show("Erro ao Salvar Dados: ");
-            }
 
         }
 
