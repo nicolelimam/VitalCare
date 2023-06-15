@@ -120,6 +120,7 @@ namespace VitalCare
             // 
             // TextMedicamentos
             // 
+            this.TextMedicamentos.Enabled = false;
             this.TextMedicamentos.Location = new System.Drawing.Point(4, 301);
             this.TextMedicamentos.Margin = new System.Windows.Forms.Padding(2);
             this.TextMedicamentos.Name = "TextMedicamentos";
@@ -148,6 +149,7 @@ namespace VitalCare
             // 
             // TextQuarto
             // 
+            this.TextQuarto.Enabled = false;
             this.TextQuarto.Location = new System.Drawing.Point(4, 161);
             this.TextQuarto.Margin = new System.Windows.Forms.Padding(2);
             this.TextQuarto.Name = "TextQuarto";
@@ -196,6 +198,7 @@ namespace VitalCare
             // 
             // TextComorbidade
             // 
+            this.TextComorbidade.Enabled = false;
             this.TextComorbidade.Location = new System.Drawing.Point(4, 253);
             this.TextComorbidade.Margin = new System.Windows.Forms.Padding(2);
             this.TextComorbidade.Name = "TextComorbidade";
@@ -204,6 +207,7 @@ namespace VitalCare
             // 
             // TextIdade
             // 
+            this.TextIdade.Enabled = false;
             this.TextIdade.Location = new System.Drawing.Point(4, 106);
             this.TextIdade.Margin = new System.Windows.Forms.Padding(2);
             this.TextIdade.Name = "TextIdade";
@@ -212,6 +216,7 @@ namespace VitalCare
             // 
             // TextMedico
             // 
+            this.TextMedico.Enabled = false;
             this.TextMedico.Location = new System.Drawing.Point(4, 206);
             this.TextMedico.Margin = new System.Windows.Forms.Padding(2);
             this.TextMedico.Name = "TextMedico";
@@ -238,6 +243,7 @@ namespace VitalCare
             // 
             // TextNome
             // 
+            this.TextNome.Enabled = false;
             this.TextNome.Location = new System.Drawing.Point(4, 50);
             this.TextNome.Margin = new System.Windows.Forms.Padding(2);
             this.TextNome.Name = "TextNome";
