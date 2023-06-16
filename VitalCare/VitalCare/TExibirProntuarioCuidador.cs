@@ -21,5 +21,10 @@ namespace VitalCare
         {
 
         }
+
+        private void BtnEditar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

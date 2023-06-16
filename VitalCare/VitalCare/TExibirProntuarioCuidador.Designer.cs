@@ -84,7 +84,7 @@ namespace VitalCare
             this.panel1.Controls.Add(this.LblIdade);
             this.panel1.Controls.Add(this.LblNome);
             this.panel1.Location = new System.Drawing.Point(28, 70);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1174, 486);
             this.panel1.TabIndex = 22;
@@ -117,7 +117,7 @@ namespace VitalCare
             // 
             this.ObsPaciente.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ObsPaciente.Location = new System.Drawing.Point(55, 316);
-            this.ObsPaciente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ObsPaciente.Margin = new System.Windows.Forms.Padding(4);
             this.ObsPaciente.Multiline = true;
             this.ObsPaciente.Name = "ObsPaciente";
             this.ObsPaciente.ReadOnly = true;
@@ -193,7 +193,7 @@ namespace VitalCare
             this.BtnAtualizar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnAtualizar.ForeColor = System.Drawing.Color.White;
             this.BtnAtualizar.Location = new System.Drawing.Point(1016, 91);
-            this.BtnAtualizar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BtnAtualizar.Margin = new System.Windows.Forms.Padding(4);
             this.BtnAtualizar.Name = "BtnAtualizar";
             this.BtnAtualizar.Size = new System.Drawing.Size(132, 33);
             this.BtnAtualizar.TabIndex = 18;
@@ -220,12 +220,13 @@ namespace VitalCare
             this.BtnEditar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnEditar.ForeColor = System.Drawing.Color.White;
             this.BtnEditar.Location = new System.Drawing.Point(1016, 50);
-            this.BtnEditar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BtnEditar.Margin = new System.Windows.Forms.Padding(4);
             this.BtnEditar.Name = "BtnEditar";
             this.BtnEditar.Size = new System.Drawing.Size(132, 33);
             this.BtnEditar.TabIndex = 16;
             this.BtnEditar.Text = "Editar";
             this.BtnEditar.UseVisualStyleBackColor = false;
+            this.BtnEditar.Click += new System.EventHandler(this.BtnEditar_Click);
             // 
             // LblObservacoes
             // 
@@ -296,7 +297,7 @@ namespace VitalCare
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.titulopanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "TExibirProntuarioCuidador";
