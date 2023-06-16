@@ -46,6 +46,8 @@ namespace VitalCare
             this.label1 = new System.Windows.Forms.Label();
             this.LblNome = new System.Windows.Forms.Label();
             this.titulopanel = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.BoxFuncionarios = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -53,6 +55,8 @@ namespace VitalCare
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(251)))), ((int)(((byte)(240)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.BoxFuncionarios);
+            this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.CampoCPF);
             this.panel1.Controls.Add(this.LblCpf);
             this.panel1.Controls.Add(this.CampoRG);
@@ -69,7 +73,7 @@ namespace VitalCare
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.LblNome);
             this.panel1.Location = new System.Drawing.Point(171, 134);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(905, 360);
             this.panel1.TabIndex = 1;
@@ -78,11 +82,12 @@ namespace VitalCare
             // 
             this.CampoCPF.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CampoCPF.Location = new System.Drawing.Point(547, 124);
-            this.CampoCPF.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CampoCPF.Margin = new System.Windows.Forms.Padding(4);
             this.CampoCPF.Multiline = true;
             this.CampoCPF.Name = "CampoCPF";
             this.CampoCPF.Size = new System.Drawing.Size(309, 25);
             this.CampoCPF.TabIndex = 24;
+            this.CampoCPF.TextChanged += new System.EventHandler(this.CampoCPF_TextChanged);
             // 
             // LblCpf
             // 
@@ -99,7 +104,7 @@ namespace VitalCare
             // 
             this.CampoRG.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CampoRG.Location = new System.Drawing.Point(151, 123);
-            this.CampoRG.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.CampoRG.Margin = new System.Windows.Forms.Padding(4);
             this.CampoRG.Multiline = true;
             this.CampoRG.Name = "CampoRG";
             this.CampoRG.Size = new System.Drawing.Size(309, 25);
@@ -121,7 +126,7 @@ namespace VitalCare
             // 
             this.campoNome.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.campoNome.Location = new System.Drawing.Point(181, 75);
-            this.campoNome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.campoNome.Margin = new System.Windows.Forms.Padding(4);
             this.campoNome.Multiline = true;
             this.campoNome.Name = "campoNome";
             this.campoNome.Size = new System.Drawing.Size(285, 25);
@@ -132,7 +137,7 @@ namespace VitalCare
             this.campoQuarto.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.campoQuarto.FormattingEnabled = true;
             this.campoQuarto.Location = new System.Drawing.Point(765, 223);
-            this.campoQuarto.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.campoQuarto.Margin = new System.Windows.Forms.Padding(4);
             this.campoQuarto.Name = "campoQuarto";
             this.campoQuarto.Size = new System.Drawing.Size(91, 29);
             this.campoQuarto.TabIndex = 19;
@@ -141,7 +146,7 @@ namespace VitalCare
             // 
             this.campoTelefone.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.campoTelefone.Location = new System.Drawing.Point(355, 222);
-            this.campoTelefone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.campoTelefone.Margin = new System.Windows.Forms.Padding(4);
             this.campoTelefone.Multiline = true;
             this.campoTelefone.Name = "campoTelefone";
             this.campoTelefone.Size = new System.Drawing.Size(223, 25);
@@ -151,7 +156,7 @@ namespace VitalCare
             // 
             this.campoResponsavel.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.campoResponsavel.Location = new System.Drawing.Point(343, 174);
-            this.campoResponsavel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.campoResponsavel.Margin = new System.Windows.Forms.Padding(4);
             this.campoResponsavel.Multiline = true;
             this.campoResponsavel.Name = "campoResponsavel";
             this.campoResponsavel.Size = new System.Drawing.Size(513, 25);
@@ -165,7 +170,7 @@ namespace VitalCare
             this.BtnSalvar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnSalvar.ForeColor = System.Drawing.Color.White;
             this.BtnSalvar.Location = new System.Drawing.Point(725, 290);
-            this.BtnSalvar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.BtnSalvar.Margin = new System.Windows.Forms.Padding(4);
             this.BtnSalvar.Name = "BtnSalvar";
             this.BtnSalvar.Size = new System.Drawing.Size(132, 33);
             this.BtnSalvar.TabIndex = 16;
@@ -177,7 +182,7 @@ namespace VitalCare
             // 
             this.campoNasc.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.campoNasc.Location = new System.Drawing.Point(632, 75);
-            this.campoNasc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.campoNasc.Margin = new System.Windows.Forms.Padding(4);
             this.campoNasc.Multiline = true;
             this.campoNasc.Name = "campoNasc";
             this.campoNasc.Size = new System.Drawing.Size(224, 25);
@@ -251,6 +256,28 @@ namespace VitalCare
             this.titulopanel.TabIndex = 19;
             this.titulopanel.Text = "CADASTRAR NOVO PACIENTE";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(92, 274);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(251, 23);
+            this.label2.TabIndex = 25;
+            this.label2.Text = "Funcionario responsavel:";
+            // 
+            // BoxFuncionarios
+            // 
+            this.BoxFuncionarios.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BoxFuncionarios.FormattingEnabled = true;
+            this.BoxFuncionarios.Location = new System.Drawing.Point(355, 273);
+            this.BoxFuncionarios.Margin = new System.Windows.Forms.Padding(4);
+            this.BoxFuncionarios.Name = "BoxFuncionarios";
+            this.BoxFuncionarios.Size = new System.Drawing.Size(223, 29);
+            this.BoxFuncionarios.TabIndex = 26;
+            this.BoxFuncionarios.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
             // TCadastroPaciente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -261,7 +288,7 @@ namespace VitalCare
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(103)))), ((int)(((byte)(84)))));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "TCadastroPaciente";
@@ -293,5 +320,7 @@ namespace VitalCare
         private System.Windows.Forms.TextBox CampoCPF;
         private System.Windows.Forms.Label LblCpf;
         private System.Windows.Forms.TextBox CampoRG;
+        private System.Windows.Forms.ComboBox BoxFuncionarios;
+        private System.Windows.Forms.Label label2;
     }
 }
