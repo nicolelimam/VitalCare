@@ -30,6 +30,8 @@ namespace VitalCare
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.campoQuarto = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.CampoMedico = new System.Windows.Forms.TextBox();
@@ -47,8 +49,6 @@ namespace VitalCare
             this.LblNome = new System.Windows.Forms.Label();
             this.BtnVoltar = new System.Windows.Forms.Button();
             this.titulopanel = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -77,6 +77,26 @@ namespace VitalCare
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(553, 408);
             this.panel1.TabIndex = 0;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(173, 223);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(323, 25);
+            this.comboBox1.TabIndex = 22;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(103)))), ((int)(((byte)(84)))));
+            this.label2.Location = new System.Drawing.Point(37, 226);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(133, 21);
+            this.label2.TabIndex = 21;
+            this.label2.Text = "Email Cuidador:";
             // 
             // campoQuarto
             // 
@@ -115,7 +135,7 @@ namespace VitalCare
             this.LblMedico.AutoSize = true;
             this.LblMedico.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblMedico.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(103)))), ((int)(((byte)(84)))));
-            this.LblMedico.Location = new System.Drawing.Point(37, 88);
+            this.LblMedico.Location = new System.Drawing.Point(38, 88);
             this.LblMedico.Name = "LblMedico";
             this.LblMedico.Size = new System.Drawing.Size(73, 21);
             this.LblMedico.TabIndex = 17;
@@ -128,7 +148,7 @@ namespace VitalCare
             this.BtnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnSalvar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnSalvar.ForeColor = System.Drawing.Color.White;
-            this.BtnSalvar.Location = new System.Drawing.Point(434, 365);
+            this.BtnSalvar.Location = new System.Drawing.Point(440, 371);
             this.BtnSalvar.Name = "BtnSalvar";
             this.BtnSalvar.Size = new System.Drawing.Size(99, 27);
             this.BtnSalvar.TabIndex = 16;
@@ -162,7 +182,7 @@ namespace VitalCare
             // 
             this.campoObservacao.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.campoObservacao.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.campoObservacao.Location = new System.Drawing.Point(173, 270);
+            this.campoObservacao.Location = new System.Drawing.Point(173, 269);
             this.campoObservacao.Multiline = true;
             this.campoObservacao.Name = "campoObservacao";
             this.campoObservacao.Size = new System.Drawing.Size(323, 89);
@@ -192,7 +212,7 @@ namespace VitalCare
             this.LblObservacoes.AutoSize = true;
             this.LblObservacoes.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblObservacoes.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(103)))), ((int)(((byte)(84)))));
-            this.LblObservacoes.Location = new System.Drawing.Point(37, 267);
+            this.LblObservacoes.Location = new System.Drawing.Point(38, 267);
             this.LblObservacoes.Name = "LblObservacoes";
             this.LblObservacoes.Size = new System.Drawing.Size(117, 21);
             this.LblObservacoes.TabIndex = 4;
@@ -203,7 +223,7 @@ namespace VitalCare
             this.LblMedicamentos.AutoSize = true;
             this.LblMedicamentos.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblMedicamentos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(103)))), ((int)(((byte)(84)))));
-            this.LblMedicamentos.Location = new System.Drawing.Point(37, 182);
+            this.LblMedicamentos.Location = new System.Drawing.Point(36, 182);
             this.LblMedicamentos.Name = "LblMedicamentos";
             this.LblMedicamentos.Size = new System.Drawing.Size(132, 21);
             this.LblMedicamentos.TabIndex = 3;
@@ -214,7 +234,7 @@ namespace VitalCare
             this.LblComorbidades.AutoSize = true;
             this.LblComorbidades.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblComorbidades.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(103)))), ((int)(((byte)(84)))));
-            this.LblComorbidades.Location = new System.Drawing.Point(37, 136);
+            this.LblComorbidades.Location = new System.Drawing.Point(35, 136);
             this.LblComorbidades.Name = "LblComorbidades";
             this.LblComorbidades.Size = new System.Drawing.Size(130, 21);
             this.LblComorbidades.TabIndex = 2;
@@ -249,7 +269,7 @@ namespace VitalCare
             this.BtnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnVoltar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnVoltar.ForeColor = System.Drawing.Color.White;
-            this.BtnVoltar.Location = new System.Drawing.Point(829, 464);
+            this.BtnVoltar.Location = new System.Drawing.Point(823, 462);
             this.BtnVoltar.Name = "BtnVoltar";
             this.BtnVoltar.Size = new System.Drawing.Size(88, 27);
             this.BtnVoltar.TabIndex = 17;
@@ -267,26 +287,6 @@ namespace VitalCare
             this.titulopanel.Size = new System.Drawing.Size(400, 30);
             this.titulopanel.TabIndex = 20;
             this.titulopanel.Text = "CADASTRAR NOVO PRONTUÁRIO";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(173, 223);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(323, 25);
-            this.comboBox1.TabIndex = 22;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(103)))), ((int)(((byte)(84)))));
-            this.label2.Location = new System.Drawing.Point(37, 227);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(133, 21);
-            this.label2.TabIndex = 21;
-            this.label2.Text = "Email Cuidador:";
             // 
             // TCadastroProntuario
             // 

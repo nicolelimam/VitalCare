@@ -31,6 +31,7 @@ namespace VitalCare
         {
             this.titulopanel = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.campoEmail = new System.Windows.Forms.TextBox();
             this.CampoSenha = new System.Windows.Forms.TextBox();
             this.LblSenha = new System.Windows.Forms.Label();
             this.BoxCargo = new System.Windows.Forms.ComboBox();
@@ -41,7 +42,6 @@ namespace VitalCare
             this.campoNomeUsu = new System.Windows.Forms.TextBox();
             this.LblNomeUsuario = new System.Windows.Forms.Label();
             this.LblNome = new System.Windows.Forms.Label();
-            this.campoEmail = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,10 +51,9 @@ namespace VitalCare
             this.titulopanel.BackColor = System.Drawing.Color.Transparent;
             this.titulopanel.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titulopanel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(103)))), ((int)(((byte)(84)))));
-            this.titulopanel.Location = new System.Drawing.Point(381, 91);
-            this.titulopanel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.titulopanel.Location = new System.Drawing.Point(286, 74);
             this.titulopanel.Name = "titulopanel";
-            this.titulopanel.Size = new System.Drawing.Size(429, 37);
+            this.titulopanel.Size = new System.Drawing.Size(349, 30);
             this.titulopanel.TabIndex = 21;
             this.titulopanel.Text = "CADASTRAR NOVO USUÁRIO";
             // 
@@ -73,18 +72,28 @@ namespace VitalCare
             this.panel1.Controls.Add(this.campoNomeUsu);
             this.panel1.Controls.Add(this.LblNomeUsuario);
             this.panel1.Controls.Add(this.LblNome);
-            this.panel1.Location = new System.Drawing.Point(171, 178);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Location = new System.Drawing.Point(128, 145);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(918, 360);
+            this.panel1.Size = new System.Drawing.Size(689, 293);
             this.panel1.TabIndex = 20;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // campoEmail
+            // 
+            this.campoEmail.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.campoEmail.Location = new System.Drawing.Point(93, 88);
+            this.campoEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.campoEmail.Name = "campoEmail";
+            this.campoEmail.Size = new System.Drawing.Size(268, 23);
+            this.campoEmail.TabIndex = 27;
+            // 
             // CampoSenha
             // 
-            this.CampoSenha.Location = new System.Drawing.Point(179, 242);
+            this.CampoSenha.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.CampoSenha.Location = new System.Drawing.Point(136, 195);
+            this.CampoSenha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CampoSenha.Name = "CampoSenha";
-            this.CampoSenha.Size = new System.Drawing.Size(274, 22);
+            this.CampoSenha.Size = new System.Drawing.Size(206, 23);
             this.CampoSenha.TabIndex = 26;
             // 
             // LblSenha
@@ -92,10 +101,9 @@ namespace VitalCare
             this.LblSenha.AutoSize = true;
             this.LblSenha.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblSenha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(103)))), ((int)(((byte)(84)))));
-            this.LblSenha.Location = new System.Drawing.Point(37, 239);
-            this.LblSenha.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblSenha.Location = new System.Drawing.Point(28, 194);
             this.LblSenha.Name = "LblSenha";
-            this.LblSenha.Size = new System.Drawing.Size(135, 23);
+            this.LblSenha.Size = new System.Drawing.Size(110, 21);
             this.LblSenha.TabIndex = 25;
             this.LblSenha.Text = "Senha inicial:";
             // 
@@ -106,10 +114,9 @@ namespace VitalCare
             this.BoxCargo.Items.AddRange(new object[] {
             "Administrador",
             "Cuidador"});
-            this.BoxCargo.Location = new System.Drawing.Point(124, 149);
-            this.BoxCargo.Margin = new System.Windows.Forms.Padding(4);
+            this.BoxCargo.Location = new System.Drawing.Point(93, 121);
             this.BoxCargo.Name = "BoxCargo";
-            this.BoxCargo.Size = new System.Drawing.Size(241, 29);
+            this.BoxCargo.Size = new System.Drawing.Size(182, 25);
             this.BoxCargo.TabIndex = 24;
             this.BoxCargo.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -118,10 +125,9 @@ namespace VitalCare
             this.LblCargo.AutoSize = true;
             this.LblCargo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblCargo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(103)))), ((int)(((byte)(84)))));
-            this.LblCargo.Location = new System.Drawing.Point(37, 150);
-            this.LblCargo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblCargo.Location = new System.Drawing.Point(28, 122);
             this.LblCargo.Name = "LblCargo";
-            this.LblCargo.Size = new System.Drawing.Size(77, 23);
+            this.LblCargo.Size = new System.Drawing.Size(64, 21);
             this.LblCargo.TabIndex = 23;
             this.LblCargo.Text = "Cargo:";
             // 
@@ -130,21 +136,19 @@ namespace VitalCare
             this.LblEmail.AutoSize = true;
             this.LblEmail.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(103)))), ((int)(((byte)(84)))));
-            this.LblEmail.Location = new System.Drawing.Point(37, 110);
-            this.LblEmail.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblEmail.Location = new System.Drawing.Point(28, 89);
             this.LblEmail.Name = "LblEmail";
-            this.LblEmail.Size = new System.Drawing.Size(74, 23);
+            this.LblEmail.Size = new System.Drawing.Size(60, 21);
             this.LblEmail.TabIndex = 21;
             this.LblEmail.Text = "E-mail:";
             // 
             // campoNome
             // 
             this.campoNome.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.campoNome.Location = new System.Drawing.Point(127, 69);
-            this.campoNome.Margin = new System.Windows.Forms.Padding(4);
+            this.campoNome.Location = new System.Drawing.Point(95, 56);
             this.campoNome.Multiline = true;
             this.campoNome.Name = "campoNome";
-            this.campoNome.Size = new System.Drawing.Size(353, 25);
+            this.campoNome.Size = new System.Drawing.Size(266, 21);
             this.campoNome.TabIndex = 20;
             // 
             // BtnSalvar
@@ -154,10 +158,9 @@ namespace VitalCare
             this.BtnSalvar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnSalvar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnSalvar.ForeColor = System.Drawing.Color.White;
-            this.BtnSalvar.Location = new System.Drawing.Point(725, 290);
-            this.BtnSalvar.Margin = new System.Windows.Forms.Padding(4);
+            this.BtnSalvar.Location = new System.Drawing.Point(544, 236);
             this.BtnSalvar.Name = "BtnSalvar";
-            this.BtnSalvar.Size = new System.Drawing.Size(132, 33);
+            this.BtnSalvar.Size = new System.Drawing.Size(99, 27);
             this.BtnSalvar.TabIndex = 16;
             this.BtnSalvar.Text = "Salvar";
             this.BtnSalvar.UseVisualStyleBackColor = false;
@@ -166,11 +169,10 @@ namespace VitalCare
             // campoNomeUsu
             // 
             this.campoNomeUsu.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.campoNomeUsu.Location = new System.Drawing.Point(240, 197);
-            this.campoNomeUsu.Margin = new System.Windows.Forms.Padding(4);
+            this.campoNomeUsu.Location = new System.Drawing.Point(180, 160);
             this.campoNomeUsu.Multiline = true;
             this.campoNomeUsu.Name = "campoNomeUsu";
-            this.campoNomeUsu.Size = new System.Drawing.Size(213, 25);
+            this.campoNomeUsu.Size = new System.Drawing.Size(161, 21);
             this.campoNomeUsu.TabIndex = 6;
             // 
             // LblNomeUsuario
@@ -178,10 +180,9 @@ namespace VitalCare
             this.LblNomeUsuario.AutoSize = true;
             this.LblNomeUsuario.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblNomeUsuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(103)))), ((int)(((byte)(84)))));
-            this.LblNomeUsuario.Location = new System.Drawing.Point(37, 196);
-            this.LblNomeUsuario.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblNomeUsuario.Location = new System.Drawing.Point(28, 159);
             this.LblNomeUsuario.Name = "LblNomeUsuario";
-            this.LblNomeUsuario.Size = new System.Drawing.Size(183, 23);
+            this.LblNomeUsuario.Size = new System.Drawing.Size(146, 21);
             this.LblNomeUsuario.TabIndex = 1;
             this.LblNomeUsuario.Text = "Nome de Usuário:";
             // 
@@ -190,30 +191,21 @@ namespace VitalCare
             this.LblNome.AutoSize = true;
             this.LblNome.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblNome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(103)))), ((int)(((byte)(84)))));
-            this.LblNome.Location = new System.Drawing.Point(37, 68);
-            this.LblNome.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblNome.Location = new System.Drawing.Point(28, 55);
             this.LblNome.Name = "LblNome";
-            this.LblNome.Size = new System.Drawing.Size(75, 23);
+            this.LblNome.Size = new System.Drawing.Size(61, 21);
             this.LblNome.TabIndex = 0;
             this.LblNome.Text = "Nome:";
             // 
-            // campoEmail
-            // 
-            this.campoEmail.Location = new System.Drawing.Point(124, 113);
-            this.campoEmail.Name = "campoEmail";
-            this.campoEmail.Size = new System.Drawing.Size(356, 22);
-            this.campoEmail.TabIndex = 27;
-            // 
             // TCadastroUsuarioADM
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::VitalCare.Properties.Resources.Tela_Principal___Cuidador;
-            this.ClientSize = new System.Drawing.Size(1253, 630);
+            this.ClientSize = new System.Drawing.Size(940, 512);
             this.Controls.Add(this.titulopanel);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "TCadastroUsuarioADM";

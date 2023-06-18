@@ -60,7 +60,7 @@ namespace VitalCare
             this.BtnAtualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAtualizar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnAtualizar.ForeColor = System.Drawing.Color.White;
-            this.BtnAtualizar.Location = new System.Drawing.Point(852, 473);
+            this.BtnAtualizar.Location = new System.Drawing.Point(840, 464);
             this.BtnAtualizar.Name = "BtnAtualizar";
             this.BtnAtualizar.Size = new System.Drawing.Size(76, 27);
             this.BtnAtualizar.TabIndex = 39;
@@ -74,7 +74,7 @@ namespace VitalCare
             this.titulopanel.BackColor = System.Drawing.Color.Transparent;
             this.titulopanel.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titulopanel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(103)))), ((int)(((byte)(84)))));
-            this.titulopanel.Location = new System.Drawing.Point(370, 22);
+            this.titulopanel.Location = new System.Drawing.Point(370, 13);
             this.titulopanel.Name = "titulopanel";
             this.titulopanel.Size = new System.Drawing.Size(208, 30);
             this.titulopanel.TabIndex = 37;
@@ -87,7 +87,7 @@ namespace VitalCare
             this.BtnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnBuscar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnBuscar.ForeColor = System.Drawing.Color.White;
-            this.BtnBuscar.Location = new System.Drawing.Point(470, 63);
+            this.BtnBuscar.Location = new System.Drawing.Point(464, 55);
             this.BtnBuscar.Name = "BtnBuscar";
             this.BtnBuscar.Size = new System.Drawing.Size(98, 26);
             this.BtnBuscar.TabIndex = 43;
@@ -97,7 +97,7 @@ namespace VitalCare
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(251)))), ((int)(((byte)(240)))));
             this.panel1.Controls.Add(this.TextMedicamentos);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label6);
@@ -113,7 +113,7 @@ namespace VitalCare
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.TextNome);
             this.panel1.Controls.Add(this.lst_Pacientes);
-            this.panel1.Location = new System.Drawing.Point(114, 92);
+            this.panel1.Location = new System.Drawing.Point(114, 84);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(716, 408);
             this.panel1.TabIndex = 41;
@@ -121,139 +121,154 @@ namespace VitalCare
             // TextMedicamentos
             // 
             this.TextMedicamentos.Enabled = false;
-            this.TextMedicamentos.Location = new System.Drawing.Point(4, 301);
+            this.TextMedicamentos.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.TextMedicamentos.Location = new System.Drawing.Point(10, 321);
             this.TextMedicamentos.Margin = new System.Windows.Forms.Padding(2);
             this.TextMedicamentos.Name = "TextMedicamentos";
-            this.TextMedicamentos.Size = new System.Drawing.Size(158, 20);
+            this.TextMedicamentos.Size = new System.Drawing.Size(201, 23);
             this.TextMedicamentos.TabIndex = 14;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(2, 285);
+            this.label7.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.label7.Location = new System.Drawing.Point(7, 300);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(76, 13);
+            this.label7.Size = new System.Drawing.Size(120, 20);
             this.label7.TabIndex = 13;
             this.label7.Text = "Medicamentos";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(2, 136);
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.label6.Location = new System.Drawing.Point(6, 124);
             this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(39, 13);
+            this.label6.Size = new System.Drawing.Size(61, 20);
             this.label6.TabIndex = 12;
             this.label6.Text = "Quarto";
             // 
             // TextQuarto
             // 
             this.TextQuarto.Enabled = false;
-            this.TextQuarto.Location = new System.Drawing.Point(4, 161);
+            this.TextQuarto.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.TextQuarto.Location = new System.Drawing.Point(10, 147);
             this.TextQuarto.Margin = new System.Windows.Forms.Padding(2);
             this.TextQuarto.Name = "TextQuarto";
-            this.TextQuarto.Size = new System.Drawing.Size(158, 20);
+            this.TextQuarto.Size = new System.Drawing.Size(201, 23);
             this.TextQuarto.TabIndex = 11;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(2, 237);
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.label5.Location = new System.Drawing.Point(6, 241);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(69, 13);
+            this.label5.Size = new System.Drawing.Size(112, 20);
             this.label5.TabIndex = 10;
             this.label5.Text = "Comorbidade";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(4, 331);
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.label4.Location = new System.Drawing.Point(8, 355);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(70, 13);
+            this.label4.Size = new System.Drawing.Size(109, 20);
             this.label4.TabIndex = 9;
             this.label4.Text = "Observações";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(2, 84);
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.label3.Location = new System.Drawing.Point(7, 65);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(34, 13);
+            this.label3.Size = new System.Drawing.Size(54, 20);
             this.label3.TabIndex = 8;
             this.label3.Text = "Idade";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(2, 191);
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.label2.Location = new System.Drawing.Point(7, 183);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(42, 13);
+            this.label2.Size = new System.Drawing.Size(67, 20);
             this.label2.TabIndex = 7;
             this.label2.Text = "Médico";
             // 
             // TextComorbidade
             // 
             this.TextComorbidade.Enabled = false;
-            this.TextComorbidade.Location = new System.Drawing.Point(4, 253);
+            this.TextComorbidade.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.TextComorbidade.Location = new System.Drawing.Point(10, 263);
             this.TextComorbidade.Margin = new System.Windows.Forms.Padding(2);
             this.TextComorbidade.Name = "TextComorbidade";
-            this.TextComorbidade.Size = new System.Drawing.Size(158, 20);
+            this.TextComorbidade.Size = new System.Drawing.Size(201, 23);
             this.TextComorbidade.TabIndex = 6;
             // 
             // TextIdade
             // 
             this.TextIdade.Enabled = false;
-            this.TextIdade.Location = new System.Drawing.Point(4, 106);
+            this.TextIdade.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.TextIdade.Location = new System.Drawing.Point(10, 88);
             this.TextIdade.Margin = new System.Windows.Forms.Padding(2);
             this.TextIdade.Name = "TextIdade";
-            this.TextIdade.Size = new System.Drawing.Size(158, 20);
+            this.TextIdade.Size = new System.Drawing.Size(201, 23);
             this.TextIdade.TabIndex = 5;
             // 
             // TextMedico
             // 
             this.TextMedico.Enabled = false;
-            this.TextMedico.Location = new System.Drawing.Point(4, 206);
+            this.TextMedico.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.TextMedico.Location = new System.Drawing.Point(10, 205);
             this.TextMedico.Margin = new System.Windows.Forms.Padding(2);
             this.TextMedico.Name = "TextMedico";
-            this.TextMedico.Size = new System.Drawing.Size(158, 20);
+            this.TextMedico.Size = new System.Drawing.Size(201, 23);
             this.TextMedico.TabIndex = 4;
             // 
             // TextObservacao
             // 
-            this.TextObservacao.Location = new System.Drawing.Point(6, 346);
+            this.TextObservacao.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.TextObservacao.Location = new System.Drawing.Point(12, 376);
             this.TextObservacao.Margin = new System.Windows.Forms.Padding(2);
             this.TextObservacao.Name = "TextObservacao";
-            this.TextObservacao.Size = new System.Drawing.Size(158, 20);
+            this.TextObservacao.Size = new System.Drawing.Size(199, 23);
             this.TextObservacao.TabIndex = 3;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(2, 35);
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.label1.Location = new System.Drawing.Point(8, 7);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.Size = new System.Drawing.Size(53, 20);
             this.label1.TabIndex = 2;
             this.label1.Text = "Nome";
             // 
             // TextNome
             // 
             this.TextNome.Enabled = false;
-            this.TextNome.Location = new System.Drawing.Point(4, 50);
+            this.TextNome.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.TextNome.Location = new System.Drawing.Point(10, 29);
             this.TextNome.Margin = new System.Windows.Forms.Padding(2);
             this.TextNome.Name = "TextNome";
-            this.TextNome.Size = new System.Drawing.Size(158, 20);
+            this.TextNome.Size = new System.Drawing.Size(201, 23);
             this.TextNome.TabIndex = 1;
             // 
             // lst_Pacientes
             // 
+            this.lst_Pacientes.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.lst_Pacientes.HideSelection = false;
-            this.lst_Pacientes.Location = new System.Drawing.Point(221, 0);
+            this.lst_Pacientes.Location = new System.Drawing.Point(221, 1);
             this.lst_Pacientes.Margin = new System.Windows.Forms.Padding(2);
             this.lst_Pacientes.Name = "lst_Pacientes";
             this.lst_Pacientes.Size = new System.Drawing.Size(494, 406);
@@ -267,7 +282,7 @@ namespace VitalCare
             this.LblPesquisar.BackColor = System.Drawing.Color.Transparent;
             this.LblPesquisar.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblPesquisar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(103)))), ((int)(((byte)(84)))));
-            this.LblPesquisar.Location = new System.Drawing.Point(116, 64);
+            this.LblPesquisar.Location = new System.Drawing.Point(110, 56);
             this.LblPesquisar.Name = "LblPesquisar";
             this.LblPesquisar.Size = new System.Drawing.Size(99, 22);
             this.LblPesquisar.TabIndex = 40;
@@ -277,7 +292,7 @@ namespace VitalCare
             // TxtBoxPesquisar
             // 
             this.TxtBoxPesquisar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBoxPesquisar.Location = new System.Drawing.Point(215, 65);
+            this.TxtBoxPesquisar.Location = new System.Drawing.Point(209, 57);
             this.TxtBoxPesquisar.Multiline = true;
             this.TxtBoxPesquisar.Name = "TxtBoxPesquisar";
             this.TxtBoxPesquisar.Size = new System.Drawing.Size(249, 21);
