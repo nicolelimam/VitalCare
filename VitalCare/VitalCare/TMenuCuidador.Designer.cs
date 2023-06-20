@@ -123,6 +123,7 @@
             this.panelprincipal.Name = "panelprincipal";
             this.panelprincipal.Size = new System.Drawing.Size(940, 512);
             this.panelprincipal.TabIndex = 3;
+            this.panelprincipal.Paint += new System.Windows.Forms.PaintEventHandler(this.panelprincipal_Paint);
             // 
             // TMenuCuidador
             // 

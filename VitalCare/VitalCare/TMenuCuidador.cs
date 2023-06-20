@@ -107,5 +107,10 @@ namespace VitalCare
         {
             abrirForms(new TPacientesCuidador(nome));
         }
+
+        private void panelprincipal_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

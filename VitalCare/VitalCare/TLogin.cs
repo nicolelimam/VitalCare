@@ -14,13 +14,14 @@ namespace VitalCare
 {
     public partial class TLogin : Form
     {
-        private Conexao conexao;
-        private string nome;
+        MySqlConnection Conexao;
+
 
         public TLogin()
         {
             InitializeComponent();
-            conexao = new Conexao();
+            campoEmail.Select();
+            campoSenha.PasswordChar = '*';
         }
 
         private GraphicsPath GraphicsPath()
@@ -55,84 +56,82 @@ namespace VitalCare
 
         private void BotaoEntrar_Click(object sender, EventArgs e)
         {
-            string email = campoEmail.Text;
-            string senha = campoSenha.Text;
-
-            MySqlConnection connection = conexao.IniciarConexao();
-
             try
             {
-                string query = "SELECT COUNT(*) FROM cad_usuario WHERE usuario_email = @usuario_email AND senha_login = @senha_login";
-                MySqlCommand command = new MySqlCommand(query, connection);
-                command.Parameters.AddWithValue("@usuario_email", email);
-                command.Parameters.AddWithValue("@senha_login", senha);
-
-                int count = Convert.ToInt32(command.ExecuteScalar());
-
-                if (count > 0)
+                if (campoEmail.Text == "" && campoSenha.Text == "")
                 {
-                    query = "SELECT nome FROM cad_usuario WHERE usuario_email = @usuario_email";
-                    command = new MySqlCommand(query, connection);
-                    command.Parameters.AddWithValue("@usuario_email", email);
+                    MessageBox.Show("Preencha os campos", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    campoEmail.Select();
 
-                    object result = command.ExecuteScalar();
-
-                    if (result != null)
-                    {
-                        nome = result.ToString();
-
-                        MessageBox.Show("Login realizado com Sucesso !!");
-                        this.Hide();
-                        TMenuCuidador x = new TMenuCuidador(nome);
-                        x.Show();
-                    }
-                    else
-                    {
-                        MessageBox.Show("Nome não encontrado.");
-                    }
                 }
                 else
                 {
-                    MessageBox.Show("Email ou senha inválidos.");
+                    string data_source = "datasource=localhost;username=root;password=;database=vitalcare";
+
+                    Conexao = new MySqlConnection(data_source);
+
+
+                    string sql = "select cargo_usuario, nome_usuario  from cad_usuario where usuario_email = '" + campoEmail.Text + "' and senha_login = '" + campoSenha.Text + "' ";
+
+
+                    MySqlCommand comando = new MySqlCommand(sql, Conexao);
+
+                    Conexao.Open();
+
+                    MySqlDataReader dr = comando.ExecuteReader();
+
+                    if (dr.Read() == true)
+                    {
+
+                        string cargo = dr.GetString(0);
+                        String nome = dr.GetString(1);
+
+
+                        string adm = "Administrador", user = "Cuidador";
+
+                        if (cargo.Equals(adm))
+                        {
+                            TMenuAdministrador x = new TMenuAdministrador();
+                            this.Hide();
+                            x.Show();
+
+                        }
+                        else if (cargo.Equals(user))
+                        {
+                            TMenuCuidador n = new TMenuCuidador(nome);
+                            this.Hide();
+                            n.Show();
+
+                        }
+                        else
+                        {
+                            MessageBox.Show("Usuário ou senha invalidos", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                            limparCampos();
+                        }
+
+                        Conexao.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Usuário ou senha invalidos", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        limparCampos();
+                    }
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show("Erro ao Realizar o Login: " + ex.Message);
+                limparCampos();
             }
-        }
 
-        private void PictureBox2_Click(object sender, EventArgs e)
-        {
 
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void limparCampos()
         {
-
-        }
-
-        private void TLogin_Load(object sender, EventArgs e)
-        {
-            // Impede que o usuário expanda a janela
-            this.MaximumSize = this.Size;
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Hide();
-            TMenuAdministrador x = new TMenuAdministrador();
-            x.Show();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            TExibirProntuarioCuidador p = new TExibirProntuarioCuidador();
-            p.Show();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
+            campoEmail.Text = "";
+            campoSenha.Text = "";
+            campoEmail.Select();
 
         }
     }

@@ -45,7 +45,6 @@ namespace VitalCare
 
         private void BtnSalvar_Click(object sender, EventArgs e)
         {
-            Boolean cpfValido = false;
 
             string nome=campoNome.Text;
             string nasci = campoNasc.Text;
