@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TLogin));
             this.campoEmail = new System.Windows.Forms.TextBox();
             this.campoSenha = new System.Windows.Forms.TextBox();
             this.textoLogin = new System.Windows.Forms.Label();
@@ -168,6 +169,7 @@
             this.Controls.Add(this.campoSenha);
             this.Controls.Add(this.campoEmail);
             this.Controls.Add(this.pictureBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "TLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

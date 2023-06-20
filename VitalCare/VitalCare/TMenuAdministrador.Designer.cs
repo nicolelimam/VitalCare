@@ -29,6 +29,7 @@ namespace VitalCare
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TMenuAdministrador));
             this.panelprincipal = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.BtnUsuarios = new System.Windows.Forms.Button();
@@ -165,10 +166,11 @@ namespace VitalCare
             this.ClientSize = new System.Drawing.Size(944, 561);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panelprincipal);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "TMenuAdministrador";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "TMenuAdministrador";
+            this.Text = "Menu";
             this.Load += new System.EventHandler(this.TMenuAdministrador_Load);
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
