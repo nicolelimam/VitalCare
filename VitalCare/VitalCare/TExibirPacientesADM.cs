@@ -130,6 +130,7 @@ namespace VitalCare
             cmd.Parameters.AddWithValue("@numero", TextNumeroQuarto.Text);
 
             cmd.ExecuteNonQuery();
+            MessageBox.Show("Dados Atualizados!");
         }
 
         private void TxtBoxPesquisar_TextChanged(object sender, EventArgs e)

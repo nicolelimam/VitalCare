@@ -43,7 +43,8 @@ namespace VitalCare
             MySqlCommand cmd = new MySqlCommand(sql, connection);
 
             cmd.ExecuteReader();
- 
+            MessageBox.Show("Dados Salvos com Sucesso!");
+
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)

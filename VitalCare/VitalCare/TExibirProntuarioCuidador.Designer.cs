@@ -188,6 +188,7 @@ namespace VitalCare
             this.BtnAtualizar.TabIndex = 18;
             this.BtnAtualizar.Text = "Atualizar";
             this.BtnAtualizar.UseVisualStyleBackColor = false;
+            this.BtnAtualizar.Click += new System.EventHandler(this.BtnAtualizar_Click);
             // 
             // LblMedico
             // 

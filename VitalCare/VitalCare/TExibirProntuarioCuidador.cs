@@ -26,5 +26,10 @@ namespace VitalCare
         {
 
         }
+
+        private void BtnAtualizar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

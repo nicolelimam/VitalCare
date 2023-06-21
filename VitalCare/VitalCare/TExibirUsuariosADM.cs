@@ -105,6 +105,7 @@ namespace VitalCare
             cmd.Parameters.AddWithValue("@email", TextEmail.Text);
 
             cmd.ExecuteNonQuery();
+            MessageBox.Show("Dados Atualizados!");
         }
     }
 }
