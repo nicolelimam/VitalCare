@@ -93,7 +93,7 @@ namespace VitalCare
 
         private void button2_Click(object sender, EventArgs e)
         {
-            abrirForms(new TCalendarioCuidador());
+            abrirForms(new TCalendario());
         }
 
         private void botaoSair_Click(object sender, EventArgs e)

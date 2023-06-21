@@ -74,6 +74,11 @@ namespace VitalCare
 
         }
 
+        private void lbData_Click(object sender, EventArgs e)
+        {
+
+        }
+
         //BOTÃO ANTERIOR
         private void btnAnterior_Click(object sender, EventArgs e)
         {

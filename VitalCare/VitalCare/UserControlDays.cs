@@ -46,12 +46,12 @@ namespace VitalCare
         //mudar de cor quando mouse passar 
         private void UserControlDays_MouseHover(object sender, EventArgs e)
         {
-            BackColor = Color.GreenYellow;
+            BackColor = Color.FromArgb(242, 251, 240);
         }
 
         private void UserControlDays_MouseEnter(object sender, EventArgs e)
         {
-            BackColor = Color.GreenYellow;
+            BackColor = Color.FromArgb(242, 251, 240);
         }
 
         private void UserControlDays_MouseLeave(object sender, EventArgs e)
@@ -61,7 +61,7 @@ namespace VitalCare
 
         private void lbDias_MouseEnter(object sender, EventArgs e)
         {
-            BackColor = Color.GreenYellow;
+            BackColor = Color.FromArgb(242, 251, 240);
         }
 
         private void lbDias_MouseLeave(object sender, EventArgs e)

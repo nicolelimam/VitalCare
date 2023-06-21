@@ -47,7 +47,7 @@ namespace VitalCare
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            abrirForms(new TCalendario());
         }
 
         private void button4_Click(object sender, EventArgs e)

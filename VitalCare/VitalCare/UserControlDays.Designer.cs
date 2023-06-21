@@ -35,11 +35,11 @@ namespace VitalCare
             // lbDias
             // 
             this.lbDias.AutoSize = true;
-            this.lbDias.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbDias.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbDias.Location = new System.Drawing.Point(25, 22);
             this.lbDias.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbDias.Name = "lbDias";
-            this.lbDias.Size = new System.Drawing.Size(30, 24);
+            this.lbDias.Size = new System.Drawing.Size(32, 22);
             this.lbDias.TabIndex = 1;
             this.lbDias.Text = "00";
             this.lbDias.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
