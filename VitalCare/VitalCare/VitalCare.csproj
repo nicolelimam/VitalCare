@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\casa-de-repouso_1.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="BouncyCastle.Crypto, Version=1.9.0.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
       <HintPath>..\packages\Portable.BouncyCastle.1.9.0\lib\net40\BouncyCastle.Crypto.dll</HintPath>
@@ -187,6 +190,18 @@
     <Compile Include="TPacientesCuidador.Designer.cs">
       <DependentUpon>TPacientesCuidador.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControlBlank1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlBlank1.Designer.cs">
+      <DependentUpon>UserControlBlank1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControlDays.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControlDays.Designer.cs">
+      <DependentUpon>UserControlDays.cs</DependentUpon>
+    </Compile>
     <Compile Include="UsuarioUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -248,6 +263,12 @@
     <EmbeddedResource Include="TPacientesCuidador.resx">
       <DependentUpon>TPacientesCuidador.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControlBlank1.resx">
+      <DependentUpon>UserControlBlank1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControlDays.resx">
+      <DependentUpon>UserControlDays.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UsuarioUC.resx">
       <DependentUpon>UsuarioUC.cs</DependentUpon>
     </EmbeddedResource>
@@ -288,6 +309,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\casa-de-repouso_1.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

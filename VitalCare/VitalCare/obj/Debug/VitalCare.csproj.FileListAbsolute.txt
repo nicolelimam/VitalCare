@@ -386,3 +386,5 @@ C:\Users\NANABE\Documents\GitHub\VitalCare\VitalCare\VitalCare\obj\Debug\VitalCa
 C:\Users\NANABE\Documents\GitHub\VitalCare\VitalCare\VitalCare\obj\Debug\VitalCare.TExibirUsuariosADM.resources
 C:\Users\NANABE\Documents\GitHub\VitalCare\VitalCare\VitalCare\obj\Debug\VitalCare.TPacientesCuidador.resources
 C:\Users\NANABE\Documents\GitHub\VitalCare\VitalCare\VitalCare\obj\Debug\VitalCare.UsuarioUC.resources
+C:\Users\nicol\OneDrive\Documentos\Repositorios\VitalCare\VitalCare\VitalCare\obj\Debug\VitalCare.UserControlBlank1.resources
+C:\Users\nicol\OneDrive\Documentos\Repositorios\VitalCare\VitalCare\VitalCare\obj\Debug\VitalCare.UserControlDays.resources

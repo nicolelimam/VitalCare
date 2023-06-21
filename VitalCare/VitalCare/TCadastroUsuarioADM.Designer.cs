@@ -29,6 +29,7 @@ namespace VitalCare
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TCadastroUsuarioADM));
             this.titulopanel = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.campoEmail = new System.Windows.Forms.TextBox();
@@ -82,7 +83,7 @@ namespace VitalCare
             // 
             this.campoEmail.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.campoEmail.Location = new System.Drawing.Point(93, 88);
-            this.campoEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.campoEmail.Margin = new System.Windows.Forms.Padding(2);
             this.campoEmail.Name = "campoEmail";
             this.campoEmail.Size = new System.Drawing.Size(268, 23);
             this.campoEmail.TabIndex = 27;
@@ -91,7 +92,7 @@ namespace VitalCare
             // 
             this.CampoSenha.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.CampoSenha.Location = new System.Drawing.Point(136, 195);
-            this.CampoSenha.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.CampoSenha.Margin = new System.Windows.Forms.Padding(2);
             this.CampoSenha.Name = "CampoSenha";
             this.CampoSenha.Size = new System.Drawing.Size(206, 23);
             this.CampoSenha.TabIndex = 26;
@@ -206,11 +207,12 @@ namespace VitalCare
             this.Controls.Add(this.titulopanel);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "TCadastroUsuarioADM";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "TCadastroUsuarioADM";
+            this.Text = "Cadastrar novo usuário";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

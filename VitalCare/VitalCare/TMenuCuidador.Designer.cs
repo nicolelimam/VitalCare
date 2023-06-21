@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TMenuCuidador));
             this.logo = new System.Windows.Forms.PictureBox();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -135,12 +136,13 @@
             this.Controls.Add(this.panelprincipal);
             this.Controls.Add(this.panel4);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(960, 600);
             this.MinimumSize = new System.Drawing.Size(960, 600);
             this.Name = "TMenuCuidador";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "TMenuCuidador";
+            this.Text = "Menu";
             this.Load += new System.EventHandler(this.TMenuCuidador_Load);
             ((System.ComponentModel.ISupportInitialize)(this.logo)).EndInit();
             this.panel4.ResumeLayout(false);
