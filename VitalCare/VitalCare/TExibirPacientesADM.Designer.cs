@@ -33,10 +33,8 @@ namespace VitalCare
             this.BtnVoltar = new System.Windows.Forms.Button();
             this.BtnBuscar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.BoxFuncionarios = new System.Windows.Forms.ComboBox();
             this.TextTele = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -52,6 +50,8 @@ namespace VitalCare
             this.TxtBoxPesquisar = new System.Windows.Forms.TextBox();
             this.titulopanel = new System.Windows.Forms.Label();
             this.BtnAtualizar = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.TextRG = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,9 +61,10 @@ namespace VitalCare
             this.BtnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCadastrar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCadastrar.ForeColor = System.Drawing.Color.White;
-            this.BtnCadastrar.Location = new System.Drawing.Point(715, 59);
+            this.BtnCadastrar.Location = new System.Drawing.Point(953, 73);
+            this.BtnCadastrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnCadastrar.Name = "BtnCadastrar";
-            this.BtnCadastrar.Size = new System.Drawing.Size(109, 26);
+            this.BtnCadastrar.Size = new System.Drawing.Size(145, 32);
             this.BtnCadastrar.TabIndex = 35;
             this.BtnCadastrar.Text = "Criar novo";
             this.BtnCadastrar.UseVisualStyleBackColor = false;
@@ -76,9 +77,10 @@ namespace VitalCare
             this.BtnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnVoltar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnVoltar.ForeColor = System.Drawing.Color.White;
-            this.BtnVoltar.Location = new System.Drawing.Point(836, 469);
+            this.BtnVoltar.Location = new System.Drawing.Point(1115, 577);
+            this.BtnVoltar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnVoltar.Name = "BtnVoltar";
-            this.BtnVoltar.Size = new System.Drawing.Size(76, 27);
+            this.BtnVoltar.Size = new System.Drawing.Size(101, 33);
             this.BtnVoltar.TabIndex = 32;
             this.BtnVoltar.Text = "Voltar";
             this.BtnVoltar.UseVisualStyleBackColor = false;
@@ -89,9 +91,10 @@ namespace VitalCare
             this.BtnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnBuscar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnBuscar.ForeColor = System.Drawing.Color.White;
-            this.BtnBuscar.Location = new System.Drawing.Point(458, 60);
+            this.BtnBuscar.Location = new System.Drawing.Point(611, 74);
+            this.BtnBuscar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnBuscar.Name = "BtnBuscar";
-            this.BtnBuscar.Size = new System.Drawing.Size(98, 26);
+            this.BtnBuscar.Size = new System.Drawing.Size(131, 32);
             this.BtnBuscar.TabIndex = 34;
             this.BtnBuscar.Text = "Buscar";
             this.BtnBuscar.UseVisualStyleBackColor = false;
@@ -100,7 +103,7 @@ namespace VitalCare
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(251)))), ((int)(((byte)(240)))));
-            this.panel1.Controls.Add(this.BoxFuncionarios);
+            this.panel1.Controls.Add(this.TextRG);
             this.panel1.Controls.Add(this.TextTele);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label6);
@@ -115,60 +118,38 @@ namespace VitalCare
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.TextNome);
             this.panel1.Controls.Add(this.lst_Pacientes);
-            this.panel1.Location = new System.Drawing.Point(108, 93);
+            this.panel1.Location = new System.Drawing.Point(144, 114);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(716, 408);
+            this.panel1.Size = new System.Drawing.Size(955, 502);
             this.panel1.TabIndex = 31;
-            // 
-            // BoxFuncionarios
-            // 
-            this.BoxFuncionarios.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BoxFuncionarios.FormattingEnabled = true;
-            this.BoxFuncionarios.Location = new System.Drawing.Point(8, 154);
-            this.BoxFuncionarios.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.BoxFuncionarios.Name = "BoxFuncionarios";
-            this.BoxFuncionarios.Size = new System.Drawing.Size(194, 25);
-            this.BoxFuncionarios.TabIndex = 15;
             // 
             // TextTele
             // 
             this.TextTele.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.TextTele.Location = new System.Drawing.Point(11, 321);
-            this.TextTele.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TextTele.Location = new System.Drawing.Point(15, 395);
+            this.TextTele.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TextTele.Name = "TextTele";
-            this.TextTele.Size = new System.Drawing.Size(191, 23);
+            this.TextTele.Size = new System.Drawing.Size(253, 27);
             this.TextTele.TabIndex = 14;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.label7.Location = new System.Drawing.Point(7, 298);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Location = new System.Drawing.Point(9, 367);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(71, 20);
+            this.label7.Size = new System.Drawing.Size(87, 22);
             this.label7.TabIndex = 13;
             this.label7.Text = "Telefone";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.label6.Location = new System.Drawing.Point(4, 130);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(78, 20);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "Cuidador";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.label5.Location = new System.Drawing.Point(7, 243);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(9, 299);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(170, 20);
+            this.label5.Size = new System.Drawing.Size(210, 22);
             this.label5.TabIndex = 10;
             this.label5.Text = "Nome do responsavel";
             // 
@@ -176,10 +157,9 @@ namespace VitalCare
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.label4.Location = new System.Drawing.Point(7, 347);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(9, 427);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(61, 20);
+            this.label4.Size = new System.Drawing.Size(77, 22);
             this.label4.TabIndex = 9;
             this.label4.Text = "Quarto";
             // 
@@ -187,10 +167,9 @@ namespace VitalCare
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.label3.Location = new System.Drawing.Point(4, 76);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(5, 94);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(37, 20);
+            this.label3.Size = new System.Drawing.Size(45, 22);
             this.label3.TabIndex = 8;
             this.label3.Text = "CPF";
             // 
@@ -198,10 +177,9 @@ namespace VitalCare
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 11.25F);
-            this.label2.Location = new System.Drawing.Point(7, 189);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(9, 233);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(158, 20);
+            this.label2.Size = new System.Drawing.Size(199, 22);
             this.label2.TabIndex = 7;
             this.label2.Text = "Data de nascimento";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -209,57 +187,56 @@ namespace VitalCare
             // TextNomeResponsavel
             // 
             this.TextNomeResponsavel.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.TextNomeResponsavel.Location = new System.Drawing.Point(11, 266);
-            this.TextNomeResponsavel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TextNomeResponsavel.Location = new System.Drawing.Point(15, 327);
+            this.TextNomeResponsavel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TextNomeResponsavel.Name = "TextNomeResponsavel";
-            this.TextNomeResponsavel.Size = new System.Drawing.Size(191, 23);
+            this.TextNomeResponsavel.Size = new System.Drawing.Size(253, 27);
             this.TextNomeResponsavel.TabIndex = 6;
             // 
             // TextCPF
             // 
             this.TextCPF.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextCPF.Location = new System.Drawing.Point(6, 98);
-            this.TextCPF.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TextCPF.Location = new System.Drawing.Point(8, 121);
+            this.TextCPF.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TextCPF.Name = "TextCPF";
-            this.TextCPF.Size = new System.Drawing.Size(196, 23);
+            this.TextCPF.Size = new System.Drawing.Size(260, 27);
             this.TextCPF.TabIndex = 5;
             // 
             // TextDataNascimento
             // 
             this.TextDataNascimento.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextDataNascimento.Location = new System.Drawing.Point(10, 212);
-            this.TextDataNascimento.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TextDataNascimento.Location = new System.Drawing.Point(13, 261);
+            this.TextDataNascimento.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TextDataNascimento.Name = "TextDataNascimento";
-            this.TextDataNascimento.Size = new System.Drawing.Size(192, 23);
+            this.TextDataNascimento.Size = new System.Drawing.Size(255, 27);
             this.TextDataNascimento.TabIndex = 4;
             // 
             // TextNumeroQuarto
             // 
             this.TextNumeroQuarto.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.TextNumeroQuarto.Location = new System.Drawing.Point(11, 369);
-            this.TextNumeroQuarto.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TextNumeroQuarto.Location = new System.Drawing.Point(15, 454);
+            this.TextNumeroQuarto.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TextNumeroQuarto.Name = "TextNumeroQuarto";
-            this.TextNumeroQuarto.Size = new System.Drawing.Size(191, 23);
+            this.TextNumeroQuarto.Size = new System.Drawing.Size(253, 27);
             this.TextNumeroQuarto.TabIndex = 3;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(2, 23);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(3, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 20);
+            this.label1.Size = new System.Drawing.Size(65, 22);
             this.label1.TabIndex = 2;
             this.label1.Text = "Nome";
             // 
             // TextNome
             // 
             this.TextNome.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TextNome.Location = new System.Drawing.Point(6, 45);
-            this.TextNome.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TextNome.Location = new System.Drawing.Point(8, 55);
+            this.TextNome.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TextNome.Name = "TextNome";
-            this.TextNome.Size = new System.Drawing.Size(196, 23);
+            this.TextNome.Size = new System.Drawing.Size(260, 27);
             this.TextNome.TabIndex = 1;
             this.TextNome.TextChanged += new System.EventHandler(this.TextNome_TextChanged);
             // 
@@ -267,10 +244,10 @@ namespace VitalCare
             // 
             this.lst_Pacientes.Font = new System.Drawing.Font("Century Gothic", 9.75F);
             this.lst_Pacientes.HideSelection = false;
-            this.lst_Pacientes.Location = new System.Drawing.Point(217, 0);
-            this.lst_Pacientes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.lst_Pacientes.Location = new System.Drawing.Point(289, 0);
+            this.lst_Pacientes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lst_Pacientes.Name = "lst_Pacientes";
-            this.lst_Pacientes.Size = new System.Drawing.Size(494, 406);
+            this.lst_Pacientes.Size = new System.Drawing.Size(657, 499);
             this.lst_Pacientes.TabIndex = 0;
             this.lst_Pacientes.UseCompatibleStateImageBehavior = false;
             this.lst_Pacientes.SelectedIndexChanged += new System.EventHandler(this.lst_Pacientes_SelectedIndexChanged);
@@ -281,19 +258,21 @@ namespace VitalCare
             this.LblPesquisar.BackColor = System.Drawing.Color.Transparent;
             this.LblPesquisar.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblPesquisar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(103)))), ((int)(((byte)(84)))));
-            this.LblPesquisar.Location = new System.Drawing.Point(104, 61);
+            this.LblPesquisar.Location = new System.Drawing.Point(139, 75);
+            this.LblPesquisar.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblPesquisar.Name = "LblPesquisar";
-            this.LblPesquisar.Size = new System.Drawing.Size(99, 22);
+            this.LblPesquisar.Size = new System.Drawing.Size(130, 30);
             this.LblPesquisar.TabIndex = 30;
             this.LblPesquisar.Text = "Pesquisar:";
             // 
             // TxtBoxPesquisar
             // 
             this.TxtBoxPesquisar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtBoxPesquisar.Location = new System.Drawing.Point(203, 62);
+            this.TxtBoxPesquisar.Location = new System.Drawing.Point(271, 76);
+            this.TxtBoxPesquisar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.TxtBoxPesquisar.Multiline = true;
             this.TxtBoxPesquisar.Name = "TxtBoxPesquisar";
-            this.TxtBoxPesquisar.Size = new System.Drawing.Size(249, 21);
+            this.TxtBoxPesquisar.Size = new System.Drawing.Size(331, 25);
             this.TxtBoxPesquisar.TabIndex = 33;
             this.TxtBoxPesquisar.TextChanged += new System.EventHandler(this.TxtBoxPesquisar_TextChanged);
             // 
@@ -303,9 +282,10 @@ namespace VitalCare
             this.titulopanel.BackColor = System.Drawing.Color.Transparent;
             this.titulopanel.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.titulopanel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(70)))), ((int)(((byte)(103)))), ((int)(((byte)(84)))));
-            this.titulopanel.Location = new System.Drawing.Point(296, 11);
+            this.titulopanel.Location = new System.Drawing.Point(395, 14);
+            this.titulopanel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.titulopanel.Name = "titulopanel";
-            this.titulopanel.Size = new System.Drawing.Size(322, 30);
+            this.titulopanel.Size = new System.Drawing.Size(396, 37);
             this.titulopanel.TabIndex = 29;
             this.titulopanel.Text = "PACIENTES CADASTRADOS";
             // 
@@ -316,20 +296,40 @@ namespace VitalCare
             this.BtnAtualizar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAtualizar.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnAtualizar.ForeColor = System.Drawing.Color.White;
-            this.BtnAtualizar.Location = new System.Drawing.Point(836, 432);
+            this.BtnAtualizar.Location = new System.Drawing.Point(1115, 532);
+            this.BtnAtualizar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.BtnAtualizar.Name = "BtnAtualizar";
-            this.BtnAtualizar.Size = new System.Drawing.Size(76, 27);
+            this.BtnAtualizar.Size = new System.Drawing.Size(101, 33);
             this.BtnAtualizar.TabIndex = 36;
             this.BtnAtualizar.Text = "Atualizar";
             this.BtnAtualizar.UseVisualStyleBackColor = false;
             this.BtnAtualizar.Click += new System.EventHandler(this.BtnAtualizar_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 11.25F);
+            this.label6.Location = new System.Drawing.Point(5, 160);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(39, 22);
+            this.label6.TabIndex = 12;
+            this.label6.Text = "RG";
+            // 
+            // TextRG
+            // 
+            this.TextRG.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TextRG.Location = new System.Drawing.Point(8, 195);
+            this.TextRG.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.TextRG.Name = "TextRG";
+            this.TextRG.Size = new System.Drawing.Size(260, 27);
+            this.TextRG.TabIndex = 15;
+            // 
             // TExibirPacientesADM
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::VitalCare.Properties.Resources.Tela_Principal___Cuidador;
-            this.ClientSize = new System.Drawing.Size(940, 512);
+            this.ClientSize = new System.Drawing.Size(1253, 630);
             this.Controls.Add(this.BtnAtualizar);
             this.Controls.Add(this.BtnCadastrar);
             this.Controls.Add(this.BtnVoltar);
@@ -339,6 +339,7 @@ namespace VitalCare
             this.Controls.Add(this.TxtBoxPesquisar);
             this.Controls.Add(this.titulopanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "TExibirPacientesADM";
             this.Text = "TExibirPacientesADM";
             this.panel1.ResumeLayout(false);
@@ -369,9 +370,9 @@ namespace VitalCare
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox TextNome;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox TextTele;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox BoxFuncionarios;
+        private System.Windows.Forms.TextBox TextRG;
+        private System.Windows.Forms.Label label6;
     }
 }

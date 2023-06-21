@@ -67,6 +67,21 @@ namespace VitalCare
             readerMedicamento.Close();
 
 
+            // Nome cuidador
+            string cuidador = "SELECT nome FROM cad_usuario";
+            MySqlCommand cmdcuiudador = new MySqlCommand(cuidador, connection);
+
+            MySqlDataReader readercuiudador = cmdcuiudador.ExecuteReader();
+
+            while (readercuiudador.Read())
+            {
+                string nomeCuidador = readercuiudador["nome"].ToString();
+                BoxEmail.Items.Add(nomeCuidador);
+
+            }
+
+            readercuiudador.Close();
+
 
         }
 
@@ -75,16 +90,18 @@ namespace VitalCare
             MySqlConnection connection = conexao.IniciarConexao();
             
             string nome = campoNome.Text;
-            int idade = campoIdade.Text.Length;
+
+            int idade = int.Parse(campoIdade.Text);
             string nomeMedico = CampoMedico.Text;
             string comorbidade = campoComorbidades.Text;
             string medicamento = campoMedicamentos.Text;
-            string quarto = campoQuarto.Text;
             string obs = campoObservacao.Text;
+            string cuidador = BoxEmail.Text;
+            string quarto = TextQuarto.Text;
             
 
-            string sql = "INSERT INTO ficha_medica (nome_idoso, idade_idoso, nome_comorbidade, tratamento_ficha_medica, observacoes, nome_medico, quarto)" +
-                "VALUES (@nomeIdoso, @idade, @comorbidade, @medicamento, @obs, @nomeMedico, @quarto)";
+            string sql = "INSERT INTO ficha_medica (nome_idoso, idade_idoso, nome_comorbidade, tratamento_ficha_medica, observacoes, nome_medico, nome_cuidador, quarto)" +
+                "VALUES (@nomeIdoso, @idade, @comorbidade, @medicamento, @obs, @nomeMedico, @cuidador, @quarto)";
 
             MySqlCommand cmd = new MySqlCommand(sql, connection);
 
@@ -94,6 +111,7 @@ namespace VitalCare
             cmd.Parameters.AddWithValue("@medicamento", medicamento);
             cmd.Parameters.AddWithValue("@obs", obs);
             cmd.Parameters.AddWithValue("@nomeMedico", nomeMedico);
+            cmd.Parameters.AddWithValue("@cuidador", cuidador);
             cmd.Parameters.AddWithValue("@quarto", quarto);
 
             cmd.ExecuteNonQuery();
@@ -117,6 +135,11 @@ namespace VitalCare
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

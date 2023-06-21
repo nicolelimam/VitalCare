@@ -28,12 +28,12 @@ namespace VitalCare
 
             lst_Pacientes.Columns.Add("ID", 30, HorizontalAlignment.Left);
             lst_Pacientes.Columns.Add("Nome", 150, HorizontalAlignment.Left);
-            lst_Pacientes.Columns.Add("Quarto", 150, HorizontalAlignment.Left);
             lst_Pacientes.Columns.Add("Idade", 150, HorizontalAlignment.Left);
-            lst_Pacientes.Columns.Add("Médico", 150, HorizontalAlignment.Left);
+            lst_Pacientes.Columns.Add("quarto", 150, HorizontalAlignment.Left);
             lst_Pacientes.Columns.Add("Comorbidade", 150, HorizontalAlignment.Left);
-            lst_Pacientes.Columns.Add("Medicamentos", 150, HorizontalAlignment.Left);
-            lst_Pacientes.Columns.Add("Observação", 150, HorizontalAlignment.Left);
+            lst_Pacientes.Columns.Add("Medicamento", 150, HorizontalAlignment.Left);
+            lst_Pacientes.Columns.Add("Observaçoes", 150, HorizontalAlignment.Left);
+            lst_Pacientes.Columns.Add("Medico", 150, HorizontalAlignment.Left);
         }
 
         private void TPacientesCuidador_Load(object sender, EventArgs e)
@@ -90,10 +90,10 @@ namespace VitalCare
                 string[] row =
                 {
             reader.GetString(0),
+            reader.GetString(1),
             reader.GetString(2),
-            reader.GetString(10),
             reader.GetString(3),
-            reader.GetString(9),
+            reader.GetString(4),
             reader.GetString(5),
             reader.GetString(6),
             reader.GetString(7),
@@ -112,12 +112,12 @@ namespace VitalCare
             foreach (ListViewItem item in items_Selecionados)
             {
                 TextNome.Text = item.SubItems[1].Text;
-                TextQuarto.Text = item.SubItems[2].Text;
-                TextIdade.Text = item.SubItems[3].Text;
-                TextMedico.Text = item.SubItems[4].Text;
-                TextComorbidade.Text = item.SubItems[5].Text;
-                TextMedicamentos.Text = item.SubItems[6].Text;
-                TextObservacao.Text = item.SubItems[7].Text;
+                TextQuarto.Text = item.SubItems[3].Text;
+                TextIdade.Text = item.SubItems[2].Text;
+                TextMedico.Text = item.SubItems[7].Text;
+                TextComorbidade.Text = item.SubItems[4].Text;
+                TextMedicamentos.Text = item.SubItems[5].Text;
+                TextObservacao.Text = item.SubItems[6].Text;
             }
         }
 
